@@ -104,25 +104,18 @@ const cheapEats = restaurants.filter((r) => r.section === "cheap");
                   )}
 
                   {it.id === "watches" && (
-                    <ul class="detail-list">
+                    <div class="watches">
                       {watches.map((w) => (
-                        <li>
-                          <span>
+                        <div class="watch">
+                          <div class="watch-head">
                             <b>{w.name}</b>
-                            {w.note ? ` — ${w.note}` : ""}
-                          </span>
-                          <span class="meta">
-                            {w.link ? (
-                              <a class="inline" href={w.link} target="_blank" rel="noopener">
-                                Chrono24
-                              </a>
-                            ) : (
-                              w.year
-                            )}
-                          </span>
-                        </li>
+                            <span class="gain">{w.gain}</span>
+                          </div>
+                          <p class="watch-specs">{w.specs}</p>
+                          <span class="watch-meta">Acquired {w.acquired}</span>
+                        </div>
                       ))}
-                    </ul>
+                    </div>
                   )}
 
                   {it.id === "menswear" &&

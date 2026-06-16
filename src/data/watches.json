@@ -1,5 +1,20 @@
 [
-  { "name": "Rolex Submariner", "note": "the one that started it", "year": "", "link": "" },
-  { "name": "Jaeger-LeCoultre Reverso Classique", "note": "art deco, and it flips", "year": "", "link": "" },
-  { "name": "Vacheron Constantin Overseas", "note": "the everyday grail", "year": "", "link": "" }
+  {
+    "name": "Rolex Submariner",
+    "specs": "Ref. 5513 · 40mm steel · automatic · acrylic crystal",
+    "acquired": "July 2018",
+    "gain": "+21.1%"
+  },
+  {
+    "name": "Jaeger-LeCoultre Reverso Classique",
+    "specs": "Ref. 250.8.86 · 23mm steel · manual wind · sapphire · full set",
+    "acquired": "November 2024",
+    "gain": "+36%"
+  },
+  {
+    "name": "Vacheron Constantin Overseas",
+    "specs": "Ref. 42042 · 37mm steel · automatic · date · sapphire",
+    "acquired": "August 2017",
+    "gain": "+274.4%"
+  }
 ]
