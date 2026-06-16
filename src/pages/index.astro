@@ -24,7 +24,19 @@ const cheapEats = restaurants.filter((r) => r.section === "cheap");
 
     <section id="about">
       <h2 class="sec-title">About</h2>
-      {site.about.map((p) => <p>{p}</p>)}
+      <p>{site.about.intro}</p>
+      <p class="about-label">{site.about.citiesLabel}</p>
+      <ul class="city-list">
+        {
+          site.about.cities.map((c) => (
+            <li>
+              <b>{c.place}</b>
+              <span>{c.years}</span>
+            </li>
+          ))
+        }
+      </ul>
+      <p>{site.about.outro}</p>
     </section>
 
     <section id="timeline">
@@ -35,6 +47,16 @@ const cheapEats = restaurants.filter((r) => r.section === "cheap");
             <div class="step">
               <span class="yr">{s.era}</span>
               <p>{s.text}</p>
+              {s.items && (
+                <>
+                  {s.itemsLabel && <span class="step-sub">{s.itemsLabel}</span>}
+                  <ul class="step-list">
+                    {s.items.map((i) => (
+                      <li>{i}</li>
+                    ))}
+                  </ul>
+                </>
+              )}
             </div>
           ))
         }

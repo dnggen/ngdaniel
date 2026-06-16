@@ -1,8 +1,12 @@
 [
-  { "era": "the start", "text": "started in corporate as an accountant." },
-  { "era": "plot twist", "text": "made the uncommon jump from accounting into investment banking. (most people exit the other way.)" },
-  { "era": "2018 – 2024", "text": "hustled in crypto. changed my life. grew a personal account from 5 to 7 figures — ICOs in 2018, airdrops in 2021, NFTs through 2021 to 2024." },
-  { "era": "columbia", "text": "completed an MBA at Columbia Business School. (thank you, crypto.)" },
-  { "era": "now", "text": "back to corporate to refine the skills — tech M&A at Evercore." },
-  { "era": "what's next", "text": "TBD. but combining everything above. some mix of: supercar salesman, fitness, menswear advisor, founder." }
+  { "era": "First jobs", "text": "Transitioned from accounting into investment banking (M&A)." },
+  { "era": "Full-time crypto", "text": "Changed my life trading .jpegs, arbitraging inefficiencies, and capturing the hottest narratives. Grew a personal account from 5 to 7 figures — ICOs in 2018, airdrops in 2021, NFTs through 2021 to 2024." },
+  { "era": "Columbia", "text": "Completed an MBA at Columbia Business School. (Thank you, crypto.)" },
+  { "era": "Back to corporate", "text": "Refining skills in the Tech M&A team at Evercore." },
+  {
+    "era": "End goal",
+    "text": "Career finance guy. Founder.",
+    "itemsLabel": "Potential side careers:",
+    "items": ["Supercar salesman", "Fitness trainer to working professionals", "Sartorial menswear advisor"]
+  }
 ]

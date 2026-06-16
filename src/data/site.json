@@ -2,10 +2,16 @@
   "name": "Daniel Ng",
   "description": "Daniel Ng — finance, crypto, and a few obsessions: menswear, watches, cars, food, photography.",
   "city": "San Francisco",
-  "about": [
-    "British born, of Singaporean and Malaysian heritage. I've built my life across three cities: London through 2024, New York from 2024 to 2026, and now San Francisco.",
-    "The throughline of everything I care about is craft, the people who pursue it, and the discipline it takes to do anything properly. This site is where I keep that."
-  ],
+  "about": {
+    "intro": "British born, Singaporean Malaysian.",
+    "citiesLabel": "Have lived and worked:",
+    "cities": [
+      { "place": "London", "years": "to 2024" },
+      { "place": "New York", "years": "2024–2026" },
+      { "place": "San Francisco", "years": "2026 – present" }
+    ],
+    "outro": "Digital native, hustler and risk taker."
+  },
   "building": "XXX",
   "contactText": "Always open to talking about any of the above. Reach out on…",
   "socials": [
