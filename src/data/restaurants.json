@@ -22,7 +22,9 @@
   { "name": "Yukashi", "city": "Toronto", "cuisine": "Japanese", "section": "fine" },
   { "name": "Kitchen WB", "city": "London", "cuisine": "Modern", "section": "fine" },
   { "name": "Trishna", "city": "London", "cuisine": "Indian", "section": "fine" },
-  { "name": "Taquería El Califa de León", "city": "Mexico City", "cuisine": "Mexican", "section": "cheap" },
-  { "name": "Kam's Roast Goose", "city": "Hong Kong", "cuisine": "Cantonese roast meats", "section": "cheap" },
-  { "name": "Ho Hung Kee", "city": "Hong Kong", "cuisine": "Noodles & congee", "section": "cheap" }
+  { "name": "Taquería El Califa de León", "city": "Mexico City", "cuisine": "Mexican", "section": "fine" },
+  { "name": "Kam's Roast Goose", "city": "Hong Kong", "cuisine": "Cantonese roast meats", "section": "fine" },
+  { "name": "Ho Hung Kee", "city": "Hong Kong", "cuisine": "Noodles & congee", "section": "fine" },
+  { "name": "Prince St Pizza", "city": "New York", "cuisine": "Pizza", "section": "cheap" },
+  { "name": "Pregar", "city": "Porto", "cuisine": "", "section": "cheap" }
 ]

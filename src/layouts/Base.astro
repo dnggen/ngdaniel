@@ -27,11 +27,12 @@ const { title = site.name, description = site.description } = Astro.props;
   <body>
     <div class="topbar">
       <nav>
-        <a href="#about">About</a>
-        <a href="#timeline">Timeline</a>
-        <a href="#interests">Interests</a>
-        <a href="#building">Building</a>
-        <a href="#contact">Contact</a>
+        <a href="/#about">About</a>
+        <a href="/#timeline">Timeline</a>
+        <a href="/#interests">Interests</a>
+        <a href="/#building">Building</a>
+        <a href="/#contact">Contact</a>
+        <a href="/photography">Photography</a>
       </nav>
       <span class="dateline" id="dateline"></span>
     </div>
@@ -40,7 +41,6 @@ const { title = site.name, description = site.description } = Astro.props;
 
     <footer>
       <span>© <span id="yr"></span> {site.name}</span>
-      <span>Made in {site.city}</span>
     </footer>
 
     <div class="lb" id="lb">

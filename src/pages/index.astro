@@ -9,7 +9,6 @@ import tailors from "../data/tailors.json";
 import restaurants from "../data/restaurants.json";
 import travel from "../data/travel.json";
 import crypto from "../data/crypto.json";
-import albums from "../data/albums.json";
 
 const tailorCountries = [...new Set(tailors.map((t) => t.country))].sort();
 const fineDining = restaurants.filter((r) => r.section === "fine");
@@ -167,7 +166,7 @@ const cheapEats = restaurants.filter((r) => r.section === "cheap");
 
                   {it.id === "food" && (
                     <>
-                      <div class="sub-head">Fine dining</div>
+                      <div class="sub-head">Michelin</div>
                       <ul class="detail-list">
                         {fineDining.map((r) => (
                           <li>
@@ -213,20 +212,9 @@ const cheapEats = restaurants.filter((r) => r.section === "cheap");
                   )}
 
                   {it.id === "photography" && (
-                    <div class="albums">
-                      {albums.map((a) => (
-                        <div
-                          class="album"
-                          data-cap={a.location ? `${a.title} · ${a.location}` : a.title}
-                        >
-                          <div
-                            class="ph"
-                            style={a.cover ? `background-image:url(${a.cover})` : `background:${a.color}`}
-                          />
-                          <span class="cap">{a.title}</span>
-                        </div>
-                      ))}
-                    </div>
+                    <p style="margin-top:4px">
+                      <a class="inline" href="/photography">View the full gallery →</a>
+                    </p>
                   )}
                 </div>
               </div>

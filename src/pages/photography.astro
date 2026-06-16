@@ -1,0 +1,36 @@
+---
+import Base from "../layouts/Base.astro";
+import albums from "../data/albums.json";
+---
+
+<Base title="Photography — Daniel Ng" description="Photography by Daniel Ng.">
+  <div class="wrap">
+    <header class="mast">
+      <a href="/" class="name" style="text-decoration:none;color:inherit">Daniel Ng</a>
+    </header>
+
+    <section style="border-bottom:0">
+      <h2 class="sec-title">Photography</h2>
+      <p style="max-width:48ch;margin-bottom:28px">
+        A short line about the photography goes here — replace this with your own words.
+      </p>
+
+      <div class="albums">
+        {
+          albums.map((a) => (
+            <div
+              class="album"
+              data-cap={a.location ? `${a.title} · ${a.location}` : a.title}
+            >
+              <div
+                class="ph"
+                style={a.cover ? `background-image:url(${a.cover})` : `background:${a.color}`}
+              />
+              <span class="cap">{a.title}</span>
+            </div>
+          ))
+        }
+      </div>
+    </section>
+  </div>
+</Base>

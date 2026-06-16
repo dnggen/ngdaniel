@@ -26,14 +26,14 @@ body{
 .topbar{
   max-width:680px;margin:0 auto;padding:22px 32px;
   display:flex;justify-content:space-between;align-items:center;
-  font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);
+  font-size:.64rem;letter-spacing:.13em;text-transform:uppercase;color:var(--muted);
 }
 .monogram{
   font-family:var(--serif);font-size:1rem;letter-spacing:.04em;text-transform:none;color:var(--ink);
   border:1px solid var(--line);border-radius:50%;width:38px;height:38px;
   display:flex;align-items:center;justify-content:center;
 }
-.topbar nav{display:flex;gap:22px}
+.topbar nav{display:flex;gap:16px}
 .topbar nav a{color:var(--muted);text-decoration:none;transition:color .25s}
 .topbar nav a:hover{color:var(--ink)}
 .dateline{font-variant-numeric:tabular-nums}
