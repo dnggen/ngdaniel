@@ -1,56 +1,58 @@
 [
   {
-    "id": "golf",
-    "name": "Golf",
-    "dek": "a game for the long run",
-    "blurb": "A sport I can see myself playing well into old age. The technical skill and the discipline it demands genuinely amaze me. Amateur, three years in, and hooked."
+    "id": "bodybuilding",
+    "name": "Bodybuilding",
+    "dek": "a decade of lifting",
+    "blurb": "Years of counting macros and progressive overload — the most reliable teacher of discipline I've found."
   },
   {
     "id": "cars",
     "name": "Cars",
-    "dek": "a self-made petrolhead",
-    "blurb": "No one in the family was into cars. I found it on my own, and it stuck. The garage, so far:",
-    "collection": "cars"
-  },
-  {
-    "id": "watches",
-    "name": "Vintage watches",
-    "dek": "the hunt as much as the piece",
-    "blurb": "I love the process of sourcing as much as the wearing. Part collector, part student of the market, viewing the right pieces through an investment lens."
-  },
-  {
-    "id": "photography",
-    "name": "Photography",
-    "dek": "memories, kept properly",
-    "blurb": "Amateur, but aspiring. I started taking it seriously in May 2026. Memories have always been priceless to me, and photography is how I hold on to the moments that matter. Shooting on a Sony RX100 VII.",
-    "collection": "albums"
-  },
-  {
-    "id": "menswear",
-    "name": "Menswear",
-    "dek": "classic, timeless, made by hand",
-    "blurb": "Classic menswear, the timeless end of it. I've worked with around fifteen of the best bespoke tailors in the world, from England to Italy to Hong Kong, shirtmakers and coatmakers alike. Currently favouring:",
-    "collection": "tailors"
+    "dek": "a self-taught obsession",
+    "blurb": "Nobody in my family was into cars; I found this one entirely on my own. The garage so far:"
   },
   {
     "id": "crypto",
     "name": "Crypto",
-    "dek": "notes from inside the cycle",
-    "blurb": "I write about crypto from the inside — the things I learned the expensive way, and where I think this is all heading.",
-    "link": { "text": "Read on Substack", "href": "#" }
+    "dek": "eight years onchain",
+    "blurb": "Eight years onchain, with millions in volume transacted. The short version:",
+    "link": { "text": "Find me on crypto Twitter", "href": "https://x.com/dnggen" }
   },
   {
     "id": "food",
     "name": "Food",
-    "dek": "hole-in-the-wall to three stars",
-    "blurb": "Food crawls, hole-in-the-wall spots, and the full Michelin run. I keep a working list and short notes.",
-    "collection": "restaurants",
-    "link": { "text": "The full log lives on Beli", "href": "#" }
+    "dek": "hole-in-the-wall to Michelin",
+    "blurb": "Food crawls, hole-in-the-wall gems, and the full Michelin run.",
+    "link": { "text": "The full log lives on Beli (@dnggen)", "href": "https://beliapp.com" }
   },
   {
-    "id": "bodybuilding",
-    "name": "Bodybuilding",
-    "dek": "a decade under the bar",
-    "blurb": "Ten years of lifting. Counting macros, progressive overload, showing up. The most reliable teacher of discipline I've found."
+    "id": "golf",
+    "name": "Golf",
+    "dek": "a game for the long run",
+    "blurb": "Learning for three years (not counting business school). The technique and the skill it demands genuinely amaze me."
+  },
+  {
+    "id": "menswear",
+    "name": "Menswear",
+    "dek": "handmade, the world over",
+    "blurb": "I've been fortunate to work with some of the best tailors in the world, all bespoke, from shirtmakers to coatmakers:"
+  },
+  {
+    "id": "photography",
+    "name": "Photography",
+    "dek": "amateur, but aspiring",
+    "blurb": "I started taking it seriously in May 2026. Memories have always been priceless to me, and photography is how I hold on to the moments that matter. Current setup: Sony RX100 VII."
+  },
+  {
+    "id": "travel",
+    "name": "Travel",
+    "dek": "trips, self-planned",
+    "blurb": "Every trip below planned and organised independently — 46 countries and counting:"
+  },
+  {
+    "id": "watches",
+    "name": "Vintage watches",
+    "dek": "design first, value follows",
+    "blurb": "I love the process of sourcing. Plenty of people steer clear of treating watches as investments; I've enjoyed finding pieces that win me on design first, then hold or grow their value."
   }
 ]

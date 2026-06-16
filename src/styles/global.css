@@ -105,6 +105,20 @@ a.inline:hover{color:var(--accent);text-decoration-color:var(--accent)}
 /* ---------- building ---------- */
 .xxx{font-family:var(--serif);font-size:2.2rem;letter-spacing:.12em;color:var(--muted);font-weight:400}
 
+/* ---------- garage ---------- */
+.garage{display:flex;flex-direction:column;gap:26px;margin-top:16px}
+.car-img{position:relative;aspect-ratio:16/10;background:#e3ddcf;border:1px solid var(--line);border-radius:3px;background-size:cover;background-position:center;display:flex;align-items:center;justify-content:center;margin-bottom:11px}
+.car-img span{font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.car h4{font-family:var(--serif);font-weight:500;font-size:1.1rem;margin-bottom:4px}
+.car .specs{font-size:.92rem;color:var(--ink-soft);margin:0 0 5px}
+.car .yrs{font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+
+/* ---------- sub-headings + travel ---------- */
+.sub-head{font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);margin:24px 0 2px}
+.travel{list-style:none;columns:2;column-gap:36px;margin-top:14px;border-top:1px solid var(--line-soft);padding-top:14px}
+.travel li{font-size:.9rem;color:var(--ink-soft);padding:5px 0;break-inside:avoid}
+.travel li b{font-weight:500;color:var(--ink)}
+
 /* ---------- contact / footer ---------- */
 .contact p{font-size:1.05rem;color:var(--ink-soft);max-width:42ch}
 .socials{display:flex;flex-wrap:wrap;gap:8px 26px;margin-top:24px}
@@ -117,5 +131,6 @@ footer{max-width:680px;margin:0 auto;padding:34px 32px 60px;color:var(--muted);f
   .topbar nav{display:none}
   .wrap{padding:0 22px 90px}
   .acc-dek{display:none}
+  .travel{columns:1}
   footer{padding:30px 22px 50px}
 }

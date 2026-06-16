@@ -1,0 +1,11 @@
+[
+  { "name": "Ascot Chang", "country": "Hong Kong", "specialty": "shirts" },
+  { "name": "W.W. Chan & Sons", "country": "Hong Kong", "specialty": "shirts, suits" },
+  { "name": "Francesco Guida", "country": "Italy", "specialty": "suits" },
+  { "name": "Luca Avitabile", "country": "Italy", "specialty": "shirts" },
+  { "name": "Sartoria Pirozzi", "country": "Italy", "specialty": "suits" },
+  { "name": "Sartoria Vergallo", "country": "Italy", "specialty": "suits" },
+  { "name": "Simone Abbarchi", "country": "Italy", "specialty": "shirts" },
+  { "name": "B&Tailor", "country": "South Korea", "specialty": "suits" },
+  { "name": "Cad & the Dandy", "country": "United Kingdom", "specialty": "coats" }
+]

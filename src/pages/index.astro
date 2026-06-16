@@ -1,15 +1,19 @@
 ---
 import Base from "../layouts/Base.astro";
-import { getCollection } from "astro:content";
 import site from "../data/site.json";
 import timeline from "../data/timeline.json";
 import interests from "../data/interests.json";
+import cars from "../data/cars.json";
+import watches from "../data/watches.json";
+import tailors from "../data/tailors.json";
+import restaurants from "../data/restaurants.json";
+import travel from "../data/travel.json";
+import crypto from "../data/crypto.json";
+import albums from "../data/albums.json";
 
-const byOrder = (a, b) => a.data.order - b.data.order;
-const cars = (await getCollection("cars")).sort(byOrder);
-const restaurants = (await getCollection("restaurants")).sort(byOrder);
-const tailors = (await getCollection("tailors")).sort(byOrder);
-const albums = (await getCollection("albums")).sort(byOrder);
+const tailorCountries = [...new Set(tailors.map((t) => t.country))].sort();
+const fineDining = restaurants.filter((r) => r.section === "fine");
+const cheapEats = restaurants.filter((r) => r.section === "cheap");
 ---
 
 <Base>
@@ -63,48 +67,36 @@ const albums = (await getCollection("albums")).sort(byOrder);
                     )}
                   </p>
 
-                  {it.collection === "cars" && (
-                    <ul class="detail-list">
+                  {it.id === "cars" && (
+                    <div class="garage">
                       {cars.map((c) => (
-                        <li>
-                          <span>
-                            <b>{c.data.name}</b>
-                            {c.data.note ? ` — ${c.data.note}` : ""}
-                          </span>
-                          <span class="meta">{c.data.years}</span>
-                        </li>
+                        <div class="car">
+                          <div class="car-img" style={c.image ? `background-image:url(${c.image})` : ""}>
+                            {!c.image && <span>photo coming</span>}
+                          </div>
+                          <h4>{c.name}</h4>
+                          <p class="specs">{c.specs}</p>
+                          <span class="yrs">{c.years}</span>
+                        </div>
                       ))}
-                    </ul>
+                    </div>
                   )}
 
-                  {it.collection === "restaurants" && (
+                  {it.id === "watches" && (
                     <ul class="detail-list">
-                      {restaurants.map((r) => (
+                      {watches.map((w) => (
                         <li>
                           <span>
-                            <b>{r.data.name}</b>{" "}
-                            <span class="stars">{"★".repeat(r.data.stars)}</span>
-                            {r.data.note ? ` — ${r.data.note}` : ""}
-                          </span>
-                          <span class="meta">{r.data.city}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  )}
-
-                  {it.collection === "tailors" && (
-                    <ul class="detail-list">
-                      {tailors.map((t) => (
-                        <li>
-                          <span>
-                            <b>{t.data.name}</b>
-                            {t.data.location ? ` — ${t.data.location}` : ""}
+                            <b>{w.name}</b>
+                            {w.note ? ` — ${w.note}` : ""}
                           </span>
                           <span class="meta">
-                            {t.data.instagram && (
-                              <a class="inline" href={t.data.instagram} target="_blank" rel="noopener">
-                                Instagram
+                            {w.link ? (
+                              <a class="inline" href={w.link} target="_blank" rel="noopener">
+                                Chrono24
                               </a>
+                            ) : (
+                              w.year
                             )}
                           </span>
                         </li>
@@ -112,22 +104,96 @@ const albums = (await getCollection("albums")).sort(byOrder);
                     </ul>
                   )}
 
-                  {it.collection === "albums" && (
+                  {it.id === "menswear" &&
+                    tailorCountries.map((country) => (
+                      <>
+                        <div class="sub-head">{country}</div>
+                        <ul class="detail-list">
+                          {tailors
+                            .filter((t) => t.country === country)
+                            .sort((a, b) => a.name.localeCompare(b.name))
+                            .map((t) => (
+                              <li>
+                                <span>
+                                  <b>{t.name}</b>
+                                </span>
+                                <span class="meta">{t.specialty}</span>
+                              </li>
+                            ))}
+                        </ul>
+                      </>
+                    ))}
+
+                  {it.id === "crypto" && (
+                    <ul class="detail-list">
+                      {crypto.map((c) => (
+                        <li>
+                          <span>{c.text}</span>
+                          <span class="meta">{c.year}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+
+                  {it.id === "food" && (
+                    <>
+                      <div class="sub-head">Fine dining</div>
+                      <ul class="detail-list">
+                        {fineDining.map((r) => (
+                          <li>
+                            <span>
+                              <b>{r.name}</b>
+                              {r.cuisine ? ` — ${r.cuisine}` : ""}
+                            </span>
+                            <span class="meta">{r.city}</span>
+                          </li>
+                        ))}
+                      </ul>
+                      <div class="sub-head">Cheap eats</div>
+                      <ul class="detail-list">
+                        {cheapEats.map((r) => (
+                          <li>
+                            <span>
+                              <b>{r.name}</b>
+                              {r.cuisine ? ` — ${r.cuisine}` : ""}
+                            </span>
+                            <span class="meta">{r.city}</span>
+                          </li>
+                        ))}
+                      </ul>
+                      <div class="sub-head">Food crawls</div>
+                      <p style="font-size:.92rem">
+                        <a class="inline" href="https://maps.app.goo.gl/a6d7DTfLyrCjJ96dA" target="_blank" rel="noopener">
+                          The crawl map
+                        </a>{" "}
+                        — routes and dates coming soon.
+                      </p>
+                    </>
+                  )}
+
+                  {it.id === "travel" && (
+                    <ul class="travel">
+                      {travel.map((t) => (
+                        <li>
+                          <b>{t.country}</b>
+                          {t.places ? ` — ${t.places}` : ""}
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+
+                  {it.id === "photography" && (
                     <div class="albums">
                       {albums.map((a) => (
                         <div
                           class="album"
-                          data-cap={a.data.location ? `${a.data.title} · ${a.data.location}` : a.data.title}
+                          data-cap={a.location ? `${a.title} · ${a.location}` : a.title}
                         >
                           <div
                             class="ph"
-                            style={
-                              a.data.cover
-                                ? `background-image:url(${a.data.cover})`
-                                : `background:${a.data.color}`
-                            }
+                            style={a.cover ? `background-image:url(${a.cover})` : `background:${a.color}`}
                           />
-                          <span class="cap">{a.data.title}</span>
+                          <span class="cap">{a.title}</span>
                         </div>
                       ))}
                     </div>

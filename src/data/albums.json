@@ -1,0 +1,6 @@
+[
+  { "title": "New York", "location": "2026", "color": "#8a8275", "cover": "", "images": [] },
+  { "title": "San Francisco", "location": "2026", "color": "#6f6a5e", "cover": "", "images": [] },
+  { "title": "On the road", "location": "", "color": "#9a8d78", "cover": "", "images": [] },
+  { "title": "Street", "location": "", "color": "#7c7468", "cover": "", "images": [] }
+]
