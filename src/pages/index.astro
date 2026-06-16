@@ -147,14 +147,22 @@ const cheapEats = restaurants.filter((r) => r.section === "cheap");
                     ))}
 
                   {it.id === "crypto" && (
-                    <ul class="detail-list">
-                      {crypto.map((c) => (
-                        <li>
-                          <span>{c.text}</span>
-                          <span class="meta">{c.year}</span>
-                        </li>
-                      ))}
-                    </ul>
+                    <>
+                      <ul class="detail-list">
+                        {crypto.map((c) => (
+                          <li>
+                            <span>{c.text}</span>
+                            <span class="meta">{c.year}</span>
+                          </li>
+                        ))}
+                      </ul>
+                      <p style="margin-top:14px">
+                        X:{" "}
+                        <a class="inline" href="https://x.com/dnggen" target="_blank" rel="noopener">
+                          @dnggen
+                        </a>
+                      </p>
+                    </>
                   )}
 
                   {it.id === "food" && (

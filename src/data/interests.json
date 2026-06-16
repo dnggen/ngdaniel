@@ -15,15 +15,14 @@
     "id": "crypto",
     "name": "Crypto",
     "dek": "eight years onchain",
-    "blurb": "Eight years onchain, with millions in volume transacted. The short version:",
-    "link": { "text": "Find me on crypto Twitter", "href": "https://x.com/dnggen" }
+    "blurb": "Millions in volume transacted across the cycles. The short version:"
   },
   {
     "id": "food",
     "name": "Food",
     "dek": "hole-in-the-wall to Michelin",
     "blurb": "Food crawls, hole-in-the-wall gems, and the full Michelin run.",
-    "link": { "text": "The full log lives on Beli (@dnggen)", "href": "https://beliapp.com" }
+    "link": { "text": "Updating live on Beli @dnggen", "href": "https://beliapp.com" }
   },
   {
     "id": "golf",
@@ -53,6 +52,7 @@
     "id": "watches",
     "name": "Vintage watches",
     "dek": "design first, value follows",
-    "blurb": "I love the process of sourcing. Plenty of people steer clear of treating watches as investments; I've enjoyed finding pieces that win me on design first, then hold or grow their value."
+    "blurb": "I love the process of sourcing. Plenty of people steer clear of treating watches as investments; I've enjoyed finding pieces that win me on design first, then hold or grow their value.",
+    "link": { "text": "My portfolio on Chrono24", "href": "#" }
   }
 ]

@@ -24,7 +24,7 @@ body{
 
 /* ---------- topbar ---------- */
 .topbar{
-  max-width:980px;margin:0 auto;padding:22px 32px;
+  max-width:680px;margin:0 auto;padding:22px 32px;
   display:flex;justify-content:space-between;align-items:center;
   font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);
 }
