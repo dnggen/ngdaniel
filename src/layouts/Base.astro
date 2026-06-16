@@ -40,7 +40,7 @@ const monogram = site.name
         <a href="#building">Building</a>
         <a href="#contact">Contact</a>
       </nav>
-      <span class="dateline" id="dateline">{site.city}</span>
+      <span class="dateline" id="dateline"></span>
     </div>
 
     <slot />
@@ -58,7 +58,7 @@ const monogram = site.name
       </figure>
     </div>
 
-    <script is:inline define:vars={{ city: site.city }}>
+    <script is:inline>
       document.querySelectorAll(".acc-head").forEach(function (btn) {
         btn.addEventListener("click", function () {
           btn.parentElement.classList.toggle("open");
@@ -91,7 +91,7 @@ const monogram = site.name
       var now = new Date();
       var months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
       document.getElementById("dateline").textContent =
-        city + " · " + now.getDate() + " " + months[now.getMonth()] + " " + now.getFullYear();
+        now.getDate() + " " + months[now.getMonth()] + " " + now.getFullYear();
       document.getElementById("yr").textContent = now.getFullYear();
     </script>
   </body>

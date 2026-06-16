@@ -7,12 +7,12 @@
     "The throughline of everything I care about is craft, the people who pursue it, and the discipline it takes to do anything properly. This site is where I keep that."
   ],
   "building": "XXX",
-  "contactText": "Open to interesting opportunities in crypto and tech, and always happy to talk shop on any of the above. My DMs are open.",
+  "contactText": "Always open to talking about any of the above. Reach out on…",
   "socials": [
-    { "label": "X / Twitter", "href": "https://x.com/dnggen" },
     { "label": "LinkedIn", "href": "https://www.linkedin.com/in/daniel-ng-/" },
+    { "label": "X / Twitter", "href": "https://x.com/dnggen" },
     { "label": "Instagram", "href": "https://www.instagram.com/ng_daniel_/" },
-    { "label": "Substack", "href": "#" },
-    { "label": "Beli", "href": "#" }
+    { "label": "@dnggen", "href": "https://beliapp.com" },
+    { "label": "Substack", "href": "#" }
   ]
 }
