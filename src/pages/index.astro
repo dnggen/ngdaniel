@@ -1,0 +1,162 @@
+---
+import Base from "../layouts/Base.astro";
+import { getCollection } from "astro:content";
+import site from "../data/site.json";
+import timeline from "../data/timeline.json";
+import interests from "../data/interests.json";
+
+const byOrder = (a, b) => a.data.order - b.data.order;
+const cars = (await getCollection("cars")).sort(byOrder);
+const restaurants = (await getCollection("restaurants")).sort(byOrder);
+const tailors = (await getCollection("tailors")).sort(byOrder);
+const albums = (await getCollection("albums")).sort(byOrder);
+---
+
+<Base>
+  <div class="wrap">
+    <header class="mast">
+      <h1 class="name">{site.name}</h1>
+    </header>
+
+    <section id="about">
+      <h2 class="sec-title">About</h2>
+      {site.about.map((p) => <p>{p}</p>)}
+    </section>
+
+    <section id="timeline">
+      <h2 class="sec-title">Timeline</h2>
+      <div class="story">
+        {
+          timeline.map((s) => (
+            <div class="step">
+              <span class="yr">{s.era}</span>
+              <p>{s.text}</p>
+            </div>
+          ))
+        }
+      </div>
+    </section>
+
+    <section id="interests">
+      <h2 class="sec-title">Interests</h2>
+      <div class="acc">
+        {
+          interests.map((it) => (
+            <div class="acc-item">
+              <button class="acc-head">
+                <span class="acc-name">{it.name}</span>
+                <span class="acc-dek">{it.dek}</span>
+                <span class="acc-sign">+</span>
+              </button>
+              <div class="acc-panel">
+                <div class="acc-inner">
+                  <p>
+                    {it.blurb}
+                    {it.link && (
+                      <>
+                        {" "}
+                        <a class="inline" href={it.link.href} target="_blank" rel="noopener">
+                          {it.link.text}
+                        </a>
+                        .
+                      </>
+                    )}
+                  </p>
+
+                  {it.collection === "cars" && (
+                    <ul class="detail-list">
+                      {cars.map((c) => (
+                        <li>
+                          <span>
+                            <b>{c.data.name}</b>
+                            {c.data.note ? ` — ${c.data.note}` : ""}
+                          </span>
+                          <span class="meta">{c.data.years}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+
+                  {it.collection === "restaurants" && (
+                    <ul class="detail-list">
+                      {restaurants.map((r) => (
+                        <li>
+                          <span>
+                            <b>{r.data.name}</b>{" "}
+                            <span class="stars">{"★".repeat(r.data.stars)}</span>
+                            {r.data.note ? ` — ${r.data.note}` : ""}
+                          </span>
+                          <span class="meta">{r.data.city}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+
+                  {it.collection === "tailors" && (
+                    <ul class="detail-list">
+                      {tailors.map((t) => (
+                        <li>
+                          <span>
+                            <b>{t.data.name}</b>
+                            {t.data.location ? ` — ${t.data.location}` : ""}
+                          </span>
+                          <span class="meta">
+                            {t.data.instagram && (
+                              <a class="inline" href={t.data.instagram} target="_blank" rel="noopener">
+                                Instagram
+                              </a>
+                            )}
+                          </span>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+
+                  {it.collection === "albums" && (
+                    <div class="albums">
+                      {albums.map((a) => (
+                        <div
+                          class="album"
+                          data-cap={a.data.location ? `${a.data.title} · ${a.data.location}` : a.data.title}
+                        >
+                          <div
+                            class="ph"
+                            style={
+                              a.data.cover
+                                ? `background-image:url(${a.data.cover})`
+                                : `background:${a.data.color}`
+                            }
+                          />
+                          <span class="cap">{a.data.title}</span>
+                        </div>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              </div>
+            </div>
+          ))
+        }
+      </div>
+    </section>
+
+    <section id="building">
+      <h2 class="sec-title">Building</h2>
+      <p class="xxx">{site.building}</p>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2 class="sec-title">Contact</h2>
+      <p>{site.contactText}</p>
+      <div class="socials">
+        {
+          site.socials.map((s) => (
+            <a href={s.href} target="_blank" rel="noopener">
+              {s.label}
+            </a>
+          ))
+        }
+      </div>
+    </section>
+  </div>
+</Base>
