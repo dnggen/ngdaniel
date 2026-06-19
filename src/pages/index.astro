@@ -8,6 +8,7 @@ import tailors from "../data/tailors.json";
 import restaurants from "../data/restaurants.json";
 import travel from "../data/travel.json";
 import crypto from "../data/crypto.json";
+import crawls from "../data/crawls.json";
 
 const tailorCountries = [...new Set(tailors.map((t) => t.country))].sort();
 const byRating = (a, b) => b.rating - a.rating;
@@ -173,9 +174,16 @@ const cheapEats = restaurants.filter((r) => r.section === "cheap").sort(byRating
                         ))}
                       </ul>
                       <div class="sub-head">Food crawls</div>
-                      <p style="font-size:.92rem">
-                        <a class="inline" href="https://maps.app.goo.gl/a6d7DTfLyrCjJ96dA" target="_blank" rel="noopener">The crawl map →</a>
-                      </p>
+                      <ul class="detail-list">
+                        {crawls.map((c) => (
+                          <li>
+                            <span>
+                              <a class="inline" href={c.url} target="_blank" rel="noopener">{c.title}</a>
+                            </span>
+                            <span class="meta">{c.date}</span>
+                          </li>
+                        ))}
+                      </ul>
                     </>
                   )}
 
