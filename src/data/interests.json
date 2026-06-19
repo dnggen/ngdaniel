@@ -15,19 +15,19 @@
     "id": "food",
     "name": "Food",
     "dek": "hole-in-the-wall to Michelin",
-    "blurb": "Food crawls, hole-in-the-wall gems, and the full Michelin run."
+    "blurb": "Ultra critical. Enjoy everything from hole-in-the-wall to fine dining. Proficient at planning food crawls."
   },
   {
     "id": "golf",
     "name": "Golf",
-    "dek": "a game for the long run",
+    "dek": "newbie but in it for the long run",
     "static": true
   },
   {
     "id": "menswear",
     "name": "Menswear",
     "dek": "handmade garments",
-    "blurb": "Some of the best tailors from around the world."
+    "blurb": "Some of the best tailors I've tried, from around the world."
   },
   {
     "id": "photography",
