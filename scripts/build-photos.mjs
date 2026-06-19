@@ -1,0 +1,52 @@
+// Generates web-optimized album images + a manifest from source photo folders.
+// Originals are never modified. Re-run after adding albums: node scripts/build-photos.mjs
+import sharp from "sharp";
+import { promises as fs } from "fs";
+import path from "path";
+import { fileURLToPath } from "url";
+
+const root = path.join(path.dirname(fileURLToPath(import.meta.url)), "..");
+
+const albums = [
+  { slug: "jersey-city", title: "Jersey City", date: "June 2026", order: 1,
+    sources: ["C:/Photos/2026/060826_NYC_Jersey City/Edited"] },
+  { slug: "financial-district", title: "Financial District", date: "June 2026", order: 2,
+    sources: ["C:/Photos/2026/060926_NYC_Financial District/Edited"] },
+  { slug: "flatiron", title: "Flatiron", date: "June 2026", order: 3,
+    sources: ["C:/Photos/2026/061126_NYC_Flat Iron/Edited"] },
+  { slug: "midtown", title: "Midtown", date: "June 2026", order: 4,
+    sources: ["C:/Photos/2026/061626_NYC_Midtown/Edited", "C:/Photos/2026/061626_NYC_Midtown/Edited 2"] },
+];
+
+const outRoot = path.join(root, "public", "photos", "albums");
+const manifest = [];
+
+for (const album of albums) {
+  const outDir = path.join(outRoot, album.slug);
+  const thumbDir = path.join(outDir, "thumb");
+  await fs.mkdir(thumbDir, { recursive: true });
+
+  const files = [];
+  for (const src of album.sources) {
+    let entries = [];
+    try { entries = await fs.readdir(src); } catch { continue; }
+    for (const e of entries) if (/\.(jpe?g|png)$/i.test(e)) files.push(path.join(src, e));
+  }
+  files.sort();
+
+  const out = [];
+  let i = 1;
+  for (const f of files) {
+    const name = String(i).padStart(2, "0") + ".webp";
+    await sharp(f).rotate().resize({ width: 2000, height: 2000, fit: "inside", withoutEnlargement: true }).webp({ quality: 80 }).toFile(path.join(outDir, name));
+    await sharp(f).rotate().resize({ width: 700, height: 700, fit: "inside", withoutEnlargement: true }).webp({ quality: 70 }).toFile(path.join(thumbDir, name));
+    out.push(name);
+    i++;
+  }
+  manifest.push({ slug: album.slug, title: album.title, date: album.date, order: album.order, files: out });
+  console.log(`${album.slug}: ${out.length} photos`);
+}
+
+manifest.sort((a, b) => a.order - b.order);
+await fs.writeFile(path.join(root, "src", "data", "photos.json"), JSON.stringify(manifest, null, 2));
+console.log("manifest -> src/data/photos.json");

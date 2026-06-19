@@ -46,7 +46,7 @@ const { title = site.name, description = site.description } = Astro.props;
     <div class="lb" id="lb">
       <button class="lb-close" id="lbClose" aria-label="Close">×</button>
       <figure class="lb-fig">
-        <div class="lb-img" id="lbImg"></div>
+        <img class="lb-img" id="lbImg" alt="" />
         <figcaption class="lb-cap" id="lbCap"></figcaption>
       </figure>
     </div>
@@ -61,12 +61,10 @@ const { title = site.name, description = site.description } = Astro.props;
       var lb = document.getElementById("lb"),
         lbImg = document.getElementById("lbImg"),
         lbCap = document.getElementById("lbCap");
-      document.querySelectorAll(".album").forEach(function (a) {
-        a.addEventListener("click", function () {
-          var ph = a.querySelector(".ph");
-          lbImg.style.background = ph.style.background;
-          lbImg.style.backgroundImage = ph.style.backgroundImage;
-          lbCap.textContent = a.getAttribute("data-cap");
+      document.querySelectorAll(".shot").forEach(function (el) {
+        el.addEventListener("click", function () {
+          lbImg.src = el.getAttribute("data-full");
+          lbCap.textContent = el.getAttribute("data-cap") || "";
           lb.classList.add("show");
         });
       });

@@ -1,0 +1,57 @@
+[
+  {
+    "slug": "jersey-city",
+    "title": "Jersey City",
+    "date": "June 2026",
+    "order": 1,
+    "files": [
+      "01.webp",
+      "02.webp",
+      "03.webp",
+      "04.webp",
+      "05.webp",
+      "06.webp"
+    ]
+  },
+  {
+    "slug": "financial-district",
+    "title": "Financial District",
+    "date": "June 2026",
+    "order": 2,
+    "files": [
+      "01.webp",
+      "02.webp",
+      "03.webp",
+      "04.webp",
+      "05.webp",
+      "06.webp",
+      "07.webp",
+      "08.webp",
+      "09.webp",
+      "10.webp"
+    ]
+  },
+  {
+    "slug": "flatiron",
+    "title": "Flatiron",
+    "date": "June 2026",
+    "order": 3,
+    "files": [
+      "01.webp",
+      "02.webp",
+      "03.webp",
+      "04.webp",
+      "05.webp"
+    ]
+  },
+  {
+    "slug": "midtown",
+    "title": "Midtown",
+    "date": "June 2026",
+    "order": 4,
+    "files": [
+      "01.webp",
+      "02.webp"
+    ]
+  }
+]
