@@ -1,7 +1,6 @@
 ---
 import Base from "../layouts/Base.astro";
 import site from "../data/site.json";
-import timeline from "../data/timeline.json";
 import interests from "../data/interests.json";
 import cars from "../data/cars.json";
 import watches from "../data/watches.json";
@@ -29,26 +28,7 @@ const cheapEats = restaurants.filter((r) => r.section === "cheap").sort(byRating
 
     <section id="timeline">
       <h2 class="sec-title">Timeline</h2>
-      <div class="story">
-        {
-          timeline.map((s) => (
-            <div class="step">
-              <span class="yr">{s.era}</span>
-              <p>{s.text}</p>
-              {s.items && (
-                <>
-                  {s.itemsLabel && <span class="step-sub">{s.itemsLabel}</span>}
-                  <ul class="step-list">
-                    {s.items.map((i) => (
-                      <li>{i}</li>
-                    ))}
-                  </ul>
-                </>
-              )}
-            </div>
-          ))
-        }
-      </div>
+      <p>{site.timelineText}</p>
     </section>
 
     <section id="interests">
