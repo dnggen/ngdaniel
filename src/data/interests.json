@@ -8,8 +8,8 @@
   {
     "id": "crypto",
     "name": "Crypto",
-    "dek": "eight years onchain",
-    "blurb": "Millions in volume transacted across the cycles. The short version:"
+    "dek": "crypto native since 2017",
+    "blurb": "Millions in volume transacted onchain."
   },
   {
     "id": "food",
@@ -22,7 +22,7 @@
     "id": "golf",
     "name": "Golf",
     "dek": "a game for the long run",
-    "blurb": "Learning for 3 years (regressed during business school). The technique and skill amaze me."
+    "static": true
   },
   {
     "id": "menswear",
