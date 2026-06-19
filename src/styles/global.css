@@ -99,6 +99,8 @@ a.inline:hover{color:var(--accent);text-decoration-color:var(--accent)}
 .detail-list li{padding:11px 0;border-bottom:1px solid var(--line-soft);font-size:.92rem;color:var(--ink-soft);display:flex;justify-content:space-between;gap:18px}
 .detail-list li .meta{color:var(--muted);font-size:.82rem;white-space:nowrap}
 .detail-list li b{font-weight:500;color:var(--ink)}
+.detail-list .r-city{color:var(--muted);font-weight:400;font-size:.85rem}
+.detail-list li .meta.rating{color:var(--ink-soft);font-variant-numeric:tabular-nums;letter-spacing:.02em}
 .stars{color:var(--accent);letter-spacing:1px;font-size:.8rem}
 
 /* ---------- photo gallery ---------- */

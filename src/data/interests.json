@@ -15,8 +15,7 @@
     "id": "food",
     "name": "Food",
     "dek": "hole-in-the-wall to Michelin",
-    "blurb": "Food crawls, hole-in-the-wall gems, and the full Michelin run.",
-    "link": { "text": "Updating live on Beli @dnggen", "href": "https://beliapp.com" }
+    "blurb": "Food crawls, hole-in-the-wall gems, and the full Michelin run."
   },
   {
     "id": "golf",
