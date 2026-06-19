@@ -54,7 +54,15 @@ const cheapEats = restaurants.filter((r) => r.section === "cheap");
       <h2 class="sec-title">Interests</h2>
       <div class="acc">
         {
-          interests.map((it) => (
+          interests.map((it) =>
+            it.static ? (
+              <div class="acc-item">
+                <div class="acc-row">
+                  <span class="acc-name">{it.name}</span>
+                  <span class="acc-dek">{it.dek}</span>
+                </div>
+              </div>
+            ) : (
             <div class="acc-item">
               <button class="acc-head">
                 <span class="acc-name">{it.name}</span>
@@ -63,6 +71,7 @@ const cheapEats = restaurants.filter((r) => r.section === "cheap");
               </button>
               <div class="acc-panel">
                 <div class="acc-inner">
+                  {(it.blurb || it.link) && (
                   <p>
                     {it.blurb}
                     {it.link && (
@@ -75,6 +84,7 @@ const cheapEats = restaurants.filter((r) => r.section === "cheap");
                       </>
                     )}
                   </p>
+                  )}
 
                   {it.id === "cars" && (
                     <div class="garage">
@@ -212,7 +222,6 @@ const cheapEats = restaurants.filter((r) => r.section === "cheap");
 
     <section id="contact" class="contact">
       <h2 class="sec-title">Contact</h2>
-      <p>{site.contactText}</p>
       <div class="socials">
         {
           site.socials.map((s) => (

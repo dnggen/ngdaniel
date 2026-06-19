@@ -1,15 +1,9 @@
 [
   {
-    "id": "bodybuilding",
-    "name": "Bodybuilding",
-    "dek": "a decade of lifting",
-    "blurb": "Years of counting macros and progressive overload — the most reliable teacher of discipline I've found."
-  },
-  {
     "id": "cars",
     "name": "Cars",
-    "dek": "a self-taught obsession",
-    "blurb": "Nobody in my family was into cars; I found this one entirely on my own. The garage so far:"
+    "dek": "late developing petrolhead",
+    "blurb": ""
   },
   {
     "id": "crypto",
@@ -53,5 +47,11 @@
     "name": "Vintage watches",
     "dek": "design first, value follows",
     "blurb": "I love the process of sourcing. Plenty of people steer clear of treating watches as investments; I've enjoyed finding pieces that win me on design first, then hold or grow their value."
+  },
+  {
+    "id": "weightlifting",
+    "name": "Weightlifting",
+    "dek": "a decade of calorie counting and progressive overload",
+    "static": true
   }
 ]

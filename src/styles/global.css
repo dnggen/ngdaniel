@@ -81,6 +81,7 @@ a.inline:hover{color:var(--accent);text-decoration-color:var(--accent)}
 /* ---------- interests (accordion) ---------- */
 .acc{border-top:1px solid var(--line-soft)}
 .acc-item{border-bottom:1px solid var(--line-soft)}
+.acc-row{display:flex;align-items:baseline;gap:16px;padding:18px 0}
 .acc-head{
   width:100%;background:none;border:0;cursor:pointer;text-align:left;
   display:flex;align-items:baseline;gap:16px;padding:18px 0;font-family:inherit;color:inherit;
@@ -111,6 +112,7 @@ a.inline:hover{color:var(--accent);text-decoration-color:var(--accent)}
 .album-block{margin-top:34px}
 .album-block:first-of-type{margin-top:20px}
 .album-title{font-family:var(--serif);font-weight:500;font-size:1.2rem;margin-bottom:2px}
+.album-loc{font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-left:8px}
 .album-date{font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);display:block;margin-bottom:12px}
 .shots{columns:3;column-gap:10px}
 .shot{display:block;width:100%;break-inside:avoid;margin:0 0 10px;padding:0;border:0;background:none;cursor:pointer;line-height:0}

@@ -21,7 +21,7 @@ import photos from "../data/photos.json";
       {
         photos.map((album) => (
           <div class="album-block">
-            <h3 class="album-title">{album.title}</h3>
+            <h3 class="album-title">{album.title} <span class="album-loc">NYC</span></h3>
             <span class="album-date">{album.date}</span>
             <div class="shots">
               {album.files.map((f) => (
