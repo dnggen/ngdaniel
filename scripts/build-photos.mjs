@@ -15,10 +15,13 @@ const albums = [
   { slug: "flatiron", title: "Flatiron", date: "June 2026", order: 3,
     sources: ["C:/Photos/2026/061126_NYC_Flat Iron/Edited"] },
   { slug: "midtown", title: "Midtown", date: "June 2026", order: 4,
-    sources: ["C:/Photos/2026/061626_NYC_Midtown/Edited", "C:/Photos/2026/061626_NYC_Midtown/Edited 2"] },
+    sources: ["C:/Photos/2026/061626_NYC_Midtown/Edited"] },
+  { slug: "midtown-ii", title: "Midtown II", date: "June 2026", order: 5,
+    sources: ["C:/Photos/2026/061626_NYC_Midtown/Edited 2"] },
 ];
 
 const outRoot = path.join(root, "public", "photos", "albums");
+await fs.rm(outRoot, { recursive: true, force: true });
 const manifest = [];
 
 for (const album of albums) {
