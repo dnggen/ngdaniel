@@ -128,7 +128,13 @@ const cheapEats = restaurants.filter((r) => r.section === "cheap").sort(byRating
                             .map((t) => (
                               <li>
                                 <span>
-                                  <b>{t.name}</b>
+                                  {t.instagram ? (
+                                    <a class="inline" href={t.instagram} target="_blank" rel="noopener">
+                                      <b>{t.name}</b>
+                                    </a>
+                                  ) : (
+                                    <b>{t.name}</b>
+                                  )}
                                 </span>
                                 <span class="meta">{t.specialty}</span>
                               </li>

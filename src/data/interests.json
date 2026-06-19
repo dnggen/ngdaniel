@@ -26,19 +26,19 @@
   {
     "id": "menswear",
     "name": "Menswear",
-    "dek": "handmade and handcrafted",
-    "blurb": "Have been fortunate to try some of the best tailors, who offer bespoke services from around the world:"
+    "dek": "handmade garments",
+    "blurb": "Some of the best tailors from around the world."
   },
   {
     "id": "photography",
     "name": "Photography",
     "dek": "amateur, but aspiring",
-    "blurb": "Started to take it more seriously since May 2026. Memories for me have always been priceless; photography offers a way to capture precious moments. Current setup: Sony RX100 VII."
+    "blurb": "Memories for me have always been priceless; photography offers a way to capture those moments."
   },
   {
     "id": "travel",
     "name": "Travel",
-    "dek": "trips, self-planned",
+    "dek": "self planned trips",
     "blurb": "Every trip below planned and organised independently — 46 countries and counting:"
   },
   {
