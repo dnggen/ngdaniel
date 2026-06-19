@@ -9,10 +9,13 @@ const root = path.join(path.dirname(fileURLToPath(import.meta.url)), "..");
 
 const albums = [
   { slug: "jersey-city", title: "Jersey City", date: "June 2026", order: 1,
+    sequence: ["02.webp", "01.webp", "04.webp", "06.webp", "05.webp", "03.webp"],
     sources: ["C:/Photos/2026/060826_NYC_Jersey City/Edited"] },
   { slug: "financial-district", title: "Financial District", date: "June 2026", order: 2,
+    sequence: ["04.webp", "03.webp", "05.webp", "09.webp", "10.webp", "06.webp", "01.webp", "08.webp", "07.webp", "02.webp"],
     sources: ["C:/Photos/2026/060926_NYC_Financial District/Edited"] },
   { slug: "flatiron", title: "Flatiron", date: "June 2026", order: 3,
+    sequence: ["02.webp", "01.webp", "05.webp", "04.webp", "03.webp"],
     sources: ["C:/Photos/2026/061126_NYC_Flat Iron/Edited"] },
   { slug: "midtown", title: "Midtown", date: "June 2026", order: 4,
     sources: ["C:/Photos/2026/061626_NYC_Midtown/Edited"] },
@@ -46,7 +49,10 @@ for (const album of albums) {
     out.push(name);
     i++;
   }
-  manifest.push({ slug: album.slug, title: album.title, date: album.date, order: album.order, files: out });
+  const ordered = album.sequence && album.sequence.length
+    ? album.sequence.filter((f) => out.includes(f)).concat(out.filter((f) => !album.sequence.includes(f)))
+    : out;
+  manifest.push({ slug: album.slug, title: album.title, date: album.date, order: album.order, files: ordered });
   console.log(`${album.slug}: ${out.length} photos`);
 }
 

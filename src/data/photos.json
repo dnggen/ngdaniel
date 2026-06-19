@@ -5,12 +5,12 @@
     "date": "June 2026",
     "order": 1,
     "files": [
-      "01.webp",
       "02.webp",
-      "03.webp",
+      "01.webp",
       "04.webp",
+      "06.webp",
       "05.webp",
-      "06.webp"
+      "03.webp"
     ]
   },
   {
@@ -19,16 +19,16 @@
     "date": "June 2026",
     "order": 2,
     "files": [
-      "01.webp",
-      "02.webp",
-      "03.webp",
       "04.webp",
+      "03.webp",
       "05.webp",
-      "06.webp",
-      "07.webp",
-      "08.webp",
       "09.webp",
-      "10.webp"
+      "10.webp",
+      "06.webp",
+      "01.webp",
+      "08.webp",
+      "07.webp",
+      "02.webp"
     ]
   },
   {
@@ -37,11 +37,11 @@
     "date": "June 2026",
     "order": 3,
     "files": [
-      "01.webp",
       "02.webp",
-      "03.webp",
+      "01.webp",
+      "05.webp",
       "04.webp",
-      "05.webp"
+      "03.webp"
     ]
   },
   {
