@@ -205,6 +205,7 @@ const cheapEats = restaurants.filter((r) => r.section === "cheap").sort(byRating
                         <li>
                           <b>{t.country}</b>
                           {t.places ? ` — ${t.places}` : ""}
+                          {t.date ? <span class="t-date"> · {t.date}</span> : ""}
                         </li>
                       ))}
                     </ul>
