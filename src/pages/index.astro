@@ -232,6 +232,7 @@ const cheapEats = restaurants.filter((r) => r.section === "cheap").sort(byRating
     <section id="contact" class="contact">
       <h2 class="sec-title">Contact</h2>
       <div class="socials">
+        <button class="email-link" id="emailBtn" type="button">Email</button>
         {
           site.socials.map((s) => (
             <a href={s.href} target="_blank" rel="noopener">

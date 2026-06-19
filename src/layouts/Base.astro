@@ -27,12 +27,9 @@ const { title = site.name, description = site.description } = Astro.props;
   <body>
     <div class="topbar">
       <nav>
-        <a href="/#about">About</a>
-        <a href="/#timeline">Timeline</a>
-        <a href="/#interests">Interests</a>
-        <a href="/#building">Building</a>
-        <a href="/#contact">Contact</a>
+        <a href="/#about">Home</a>
         <a href="/photography">Photography</a>
+        <a href="/#contact">Contact</a>
       </nav>
       <span class="dateline" id="dateline"></span>
     </div>
@@ -49,6 +46,18 @@ const { title = site.name, description = site.description } = Astro.props;
         <img class="lb-img" id="lbImg" alt="" />
         <figcaption class="lb-cap" id="lbCap"></figcaption>
       </figure>
+    </div>
+
+    <div class="lb" id="emailPop">
+      <button class="lb-close" id="emailClose" aria-label="Close">×</button>
+      <div class="email-card">
+        <p class="email-addr">dvnielng@gmail.com</p>
+        <div class="email-actions">
+          <button id="emailCopy" type="button">Copy</button>
+          <a class="inline" href="mailto:dvnielng@gmail.com">Open mail app</a>
+        </div>
+        <span class="email-copied" id="emailCopied"></span>
+      </div>
     </div>
 
     <script is:inline>
@@ -75,8 +84,22 @@ const { title = site.name, description = site.description } = Astro.props;
       lb.addEventListener("click", function (e) {
         if (e.target === lb) closeLb();
       });
+
+      var emailPop = document.getElementById("emailPop"),
+        emailBtn = document.getElementById("emailBtn"),
+        emailCopied = document.getElementById("emailCopied");
+      function closeEmail() { emailPop.classList.remove("show"); }
+      if (emailBtn) emailBtn.addEventListener("click", function () { emailPop.classList.add("show"); });
+      document.getElementById("emailClose").addEventListener("click", closeEmail);
+      emailPop.addEventListener("click", function (e) { if (e.target === emailPop) closeEmail(); });
+      document.getElementById("emailCopy").addEventListener("click", function () {
+        navigator.clipboard.writeText("dvnielng@gmail.com").then(function () {
+          emailCopied.textContent = "Copied to clipboard";
+        });
+      });
+
       document.addEventListener("keydown", function (e) {
-        if (e.key === "Escape") closeLb();
+        if (e.key === "Escape") { closeLb(); closeEmail(); }
       });
 
       var now = new Date();
