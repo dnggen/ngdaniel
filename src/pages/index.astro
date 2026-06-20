@@ -16,6 +16,7 @@ const mwMap = Object.fromEntries(menswear.map((m) => [m.slug, m.files]));
 const byRating = (a, b) => (b.rating || 0) - (a.rating || 0);
 const fineDining = restaurants.filter((r) => r.section === "fine").sort(byRating);
 const cheapEats = restaurants.filter((r) => r.section === "cheap").sort(byRating);
+const fineCuisines = [...new Set(fineDining.map((r) => r.cuisine))].sort();
 ---
 
 <Base>
@@ -180,20 +181,27 @@ const cheapEats = restaurants.filter((r) => r.section === "cheap").sort(byRating
                         <a class="inline" href="https://beliapp.com" target="_blank" rel="noopener">@dnggen</a>
                       </p>
                       <div class="sub-head">Michelin</div>
-                      <ul class="detail-list">
-                        {fineDining.map((r) => (
-                          <li class="rest-li">
-                            <div class="rest-row">
-                              <span>
-                                <b>{r.name}</b>
-                                <span class="r-city">{r.city ? ` · ${r.city}` : ""}</span>
-                              </span>
-                              {r.rating ? <span class="meta rating">{r.rating}/5</span> : null}
-                            </div>
-                            {r.note && <p class="rest-note">{r.note}</p>}
-                          </li>
-                        ))}
-                      </ul>
+                      {fineCuisines.map((cuisine) => (
+                        <>
+                          <div class="cuisine-head">{cuisine}</div>
+                          <ul class="detail-list">
+                            {fineDining
+                              .filter((r) => r.cuisine === cuisine)
+                              .map((r) => (
+                                <li class="rest-li">
+                                  <div class="rest-row">
+                                    <span>
+                                      <b>{r.name}</b>
+                                      <span class="r-city">{r.city ? ` · ${r.city}` : ""}</span>
+                                    </span>
+                                    {r.rating ? <span class="meta rating">{r.rating}/5</span> : null}
+                                  </div>
+                                  {r.note && <p class="rest-note">{r.note}</p>}
+                                </li>
+                              ))}
+                          </ul>
+                        </>
+                      ))}
                       <div class="sub-head">Cheap eats</div>
                       <ul class="detail-list">
                         {cheapEats.map((r) => (

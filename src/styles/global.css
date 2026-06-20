@@ -96,6 +96,8 @@ a.inline:hover{color:var(--accent);text-decoration-color:var(--accent)}
 .detail-list li.tailor-li,.detail-list li.rest-li{display:block}
 .rest-row{display:flex;justify-content:space-between;align-items:baseline;gap:18px}
 .rest-note{margin:2px 0 0;font-size:.85rem;color:var(--muted);font-style:italic}
+.cuisine-head{font-family:var(--serif);font-size:.98rem;color:var(--ink);margin:16px 0 0}
+.cuisine-head + .detail-list{margin-top:6px;border-top:0}
 .tailor-row{display:flex;justify-content:space-between;align-items:baseline;gap:18px}
 .outfit-acc{border-bottom:0;margin-top:4px}
 .outfit-acc .acc-head{padding:8px 0}

@@ -32,5 +32,11 @@
   { "name": "Budapest Bakeshop", "city": "Vancouver", "section": "cheap", "note": "First and favourite — Hungarian sandwiches" },
   { "name": "Nevería Roxy", "city": "Mexico City", "section": "cheap", "note": "Amazing ice cream" },
   { "name": "Panadería Rosetta", "city": "Mexico City", "section": "cheap", "note": "Elite bakery" },
-  { "name": "Samsara's Garden", "city": "Guatemala", "section": "cheap", "note": "Surprisingly good vegan food" }
+  { "name": "Samsara's Garden", "city": "Guatemala", "section": "cheap", "note": "Surprisingly good vegan food" },
+  { "name": "El Mercado", "city": "Lima", "section": "cheap", "note": "Great local food" },
+  { "name": "Carmen", "city": "Cartagena", "section": "cheap", "note": "Great local food" },
+  { "name": "Samwoojung", "city": "New York", "section": "cheap", "note": "Amazing Korean bulgogi" },
+  { "name": "Terry Black's BBQ", "city": "Austin", "section": "cheap", "note": "Favourite BBQ spot I've tried" },
+  { "name": "Shu Jiao Fu Zhou", "city": "New York", "section": "cheap", "note": "Cheap dumplings" },
+  { "name": "Ramen Tatsunoya", "city": "Tokyo", "section": "cheap", "note": "Elite tsukemen" }
 ]
