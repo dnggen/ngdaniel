@@ -125,6 +125,7 @@ const fineCuisines = [...new Set(fineDining.map((r) => r.cuisine))].sort();
                             ) : (
                               <div class="car-img"><span>photo coming</span></div>
                             )}
+                            {c.caption && <p class="car-caption">{c.caption}</p>}
                             <h4>{c.name}</h4>
                             <p class="specs">{c.specs}</p>
                             <span class="yrs">{c.years}</span>
