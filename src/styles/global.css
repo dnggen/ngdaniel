@@ -93,7 +93,9 @@ a.inline:hover{color:var(--accent);text-decoration-color:var(--accent)}
 .acc-item.open .acc-sign{transform:rotate(45deg)}
 .acc-panel{overflow:hidden;max-height:0;transition:max-height .4s ease,opacity .3s;opacity:0}
 .acc-item.open .acc-panel{max-height:4000px;opacity:1}
-.detail-list li.tailor-li{display:block}
+.detail-list li.tailor-li,.detail-list li.rest-li{display:block}
+.rest-row{display:flex;justify-content:space-between;align-items:baseline;gap:18px}
+.rest-note{margin:2px 0 0;font-size:.85rem;color:var(--muted);font-style:italic}
 .tailor-row{display:flex;justify-content:space-between;align-items:baseline;gap:18px}
 .outfit-acc{border-bottom:0;margin-top:4px}
 .outfit-acc .acc-head{padding:8px 0}

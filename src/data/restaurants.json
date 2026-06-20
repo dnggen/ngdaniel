@@ -25,6 +25,12 @@
   { "name": "Taquería El Califa de León", "city": "Mexico City", "cuisine": "Mexican", "section": "fine", "rating": 2 },
   { "name": "Kam's Roast Goose", "city": "Hong Kong", "cuisine": "Cantonese roast meats", "section": "fine", "rating": 4 },
   { "name": "Ho Hung Kee", "city": "Hong Kong", "cuisine": "Noodles & congee", "section": "fine", "rating": 2.5 },
-  { "name": "Prince St Pizza", "city": "New York", "cuisine": "Pizza", "section": "cheap", "rating": 4.5 },
-  { "name": "Pregar", "city": "Porto", "cuisine": "", "section": "cheap", "rating": 5 }
+  { "name": "Pregar", "city": "Porto", "section": "cheap", "rating": 5, "note": "Best steak sandwich" },
+  { "name": "Prince St Pizza", "city": "New York", "section": "cheap", "rating": 4.5 },
+  { "name": "Princess Seafood", "city": "California", "section": "cheap", "note": "Best seafood I've had in the USA" },
+  { "name": "Poni", "city": "", "section": "cheap", "note": "Quality French-style food" },
+  { "name": "Budapest Bakeshop", "city": "Vancouver", "section": "cheap", "note": "First and favourite — Hungarian sandwiches" },
+  { "name": "Nevería Roxy", "city": "Mexico City", "section": "cheap", "note": "Amazing ice cream" },
+  { "name": "Panadería Rosetta", "city": "Mexico City", "section": "cheap", "note": "Elite bakery" },
+  { "name": "Samsara's Garden", "city": "Guatemala", "section": "cheap", "note": "Surprisingly good vegan food" }
 ]
