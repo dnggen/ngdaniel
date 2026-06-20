@@ -1,15 +1,12 @@
 [
-  { "heading": "First jobs", "dropdown": true, "text": "Made an uncommon transition from accounting to investment banking." },
+  { "heading": "First jobs", "dropdown": true, "text": "Uncommonly transitioned from accounting to investment banking." },
   { "heading": "Full-time crypto", "dropdown": true, "text": "Traded JPEGs, arbitraged inefficiencies, and caught the hottest narratives, growing a personal account from 5 to 7 figures." },
   { "heading": "Back to school", "dropdown": true, "text": "Moved from London to NYC. Completed an MBA at Columbia Business School." },
   { "heading": "Back to corporate", "text": "Refining skills on the Tech M&A team at Evercore." },
+  { "heading": "End game", "dropdown": true, "text": "Finance and/or Founder." },
   {
-    "heading": "End game",
+    "heading": "Side Careers",
     "dropdown": true,
-    "text": "Founder and/or career finance.",
-    "sub": {
-      "heading": "Side Projects",
-      "items": ["Fitness trainer to working professionals", "Menswear advisor", "Supercar salesman"]
-    }
+    "items": ["Fitness trainer to working professionals", "Menswear advisor", "Supercar salesman"]
   }
 ]

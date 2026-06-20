@@ -45,23 +45,13 @@ const fineCuisines = [...new Set(fineDining.map((r) => r.cuisine))].sort();
               </button>
               <div class="acc-panel">
                 <div class="acc-inner">
-                  <p>{t.text}</p>
-                  {t.sub && (
-                    <div class="acc-item tl-sub-acc">
-                      <button class="acc-head">
-                        <span class="acc-name">{t.sub.heading}</span>
-                        <span class="acc-sign">+</span>
-                      </button>
-                      <div class="acc-panel">
-                        <div class="acc-inner">
-                          <ul class="step-list">
-                            {t.sub.items.map((i) => (
-                              <li>{i}</li>
-                            ))}
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
+                  {t.text && <p>{t.text}</p>}
+                  {t.items && (
+                    <ul class="step-list">
+                      {t.items.map((i) => (
+                        <li>{i}</li>
+                      ))}
+                    </ul>
                   )}
                 </div>
               </div>
