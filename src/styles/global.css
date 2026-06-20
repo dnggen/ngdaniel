@@ -207,7 +207,8 @@ a.inline:hover{color:var(--accent);text-decoration-color:var(--accent)}
 footer{max-width:680px;margin:0 auto;padding:34px 32px 60px;color:var(--muted);font-size:.78rem;letter-spacing:.04em;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
 
 @media(max-width:640px){
-  .topbar nav{display:none}
+  .topbar{padding:18px 22px;gap:10px}
+  .topbar nav{gap:12px}
   .wrap{padding:0 22px 90px}
   .acc-dek{display:none}
   .travel{columns:1}
