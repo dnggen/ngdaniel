@@ -80,7 +80,7 @@ const fineCuisines = [...new Set(fineDining.map((r) => r.cuisine))].sort();
                         return (
                           <div class="car">
                             {pics.length > 0 ? (
-                              <button class="shot car-shot" data-full={`/photos/cars/${c.slug}/${pics[0]}`} data-cap={c.name}>
+                              <button class="shot car-shot" data-full={`/photos/cars/${c.slug}/${pics[0]}`} data-cap={c.caption || c.name}>
                                 <img src={`/photos/cars/${c.slug}/thumb/${pics[0]}`} alt={c.name} loading="lazy" />
                               </button>
                             ) : (
