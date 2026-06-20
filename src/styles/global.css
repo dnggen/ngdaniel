@@ -106,9 +106,9 @@ a.inline:hover{color:var(--accent);text-decoration-color:var(--accent)}
 .acc-name{font-family:var(--serif);font-weight:500;font-size:1.22rem;letter-spacing:-.01em;flex-shrink:0;transition:color .25s}
 .acc-dek{font-size:.9rem;color:var(--muted);flex:1;line-height:1.4}
 .acc-sign{margin-left:auto;font-size:1.05rem;color:var(--muted);flex-shrink:0;transition:transform .3s;line-height:1}
-.acc-item.open .acc-sign{transform:rotate(45deg)}
+.acc-item.open > .acc-head .acc-sign{transform:rotate(45deg)}
 .acc-panel{overflow:hidden;max-height:0;transition:max-height .4s ease,opacity .3s;opacity:0}
-.acc-item.open .acc-panel{max-height:4000px;opacity:1}
+.acc-item.open > .acc-panel{max-height:4000px;opacity:1}
 .detail-list li.tailor-li,.detail-list li.rest-li{display:block}
 .rest-row{display:flex;justify-content:space-between;align-items:baseline;gap:18px}
 .rest-note{margin:2px 0 0;font-size:.85rem;color:var(--muted);font-style:italic}

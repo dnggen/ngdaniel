@@ -9,13 +9,13 @@ const root = path.join(path.dirname(fileURLToPath(import.meta.url)), "..");
 
 const albums = [
   { slug: "jersey-city", title: "Jersey City", date: "June 2026", order: 1,
-    sequence: ["02.webp", "01.webp", "04.webp", "06.webp", "05.webp", "03.webp"],
+    sequence: ["02.webp", "01.webp", "03.webp", "04.webp", "05.webp", "06.webp"],
     sources: ["C:/Photos/2026/060826_NYC_Jersey City/Edited"] },
   { slug: "financial-district", title: "Financial District", date: "June 2026", order: 2,
-    sequence: ["10.webp", "09.webp", "04.webp", "03.webp", "05.webp", "06.webp", "01.webp", "08.webp", "07.webp", "02.webp"],
+    sequence: ["10.webp", "09.webp", "01.webp", "02.webp", "06.webp", "07.webp", "08.webp", "03.webp", "05.webp", "04.webp"],
     sources: ["C:/Photos/2026/060926_NYC_Financial District/Edited"] },
   { slug: "flatiron", title: "Flatiron", date: "June 2026", order: 3,
-    sequence: ["02.webp", "01.webp", "05.webp", "04.webp", "03.webp"],
+    sequence: ["05.webp", "01.webp", "04.webp", "02.webp", "03.webp"],
     sources: ["C:/Photos/2026/061126_NYC_Flat Iron/Edited"] },
   { slug: "midtown", title: "Midtown", date: "June 2026", order: 4,
     sources: ["C:/Photos/2026/061626_NYC_Midtown/Edited"] },
