@@ -92,7 +92,16 @@ a.inline:hover{color:var(--accent);text-decoration-color:var(--accent)}
 .acc-sign{margin-left:auto;font-size:1.05rem;color:var(--muted);flex-shrink:0;transition:transform .3s;line-height:1}
 .acc-item.open .acc-sign{transform:rotate(45deg)}
 .acc-panel{overflow:hidden;max-height:0;transition:max-height .4s ease,opacity .3s;opacity:0}
-.acc-item.open .acc-panel{max-height:1600px;opacity:1}
+.acc-item.open .acc-panel{max-height:4000px;opacity:1}
+.detail-list li.tailor-li{display:block}
+.tailor-row{display:flex;justify-content:space-between;align-items:baseline;gap:18px}
+.outfit-acc{border-bottom:0;margin-top:4px}
+.outfit-acc .acc-head{padding:8px 0}
+.outfit-acc .acc-name{font-family:var(--sans);font-weight:400;font-size:.85rem;letter-spacing:.04em;color:var(--muted)}
+.outfit-acc.open .acc-name,.outfit-acc .acc-head:hover .acc-name{color:var(--accent)}
+.outfit-acc .acc-sign{font-size:.9rem}
+.outfit-acc .acc-inner{padding:0 0 12px}
+.outfit-shots{columns:2;column-gap:10px}
 .acc-inner{padding:0 0 24px}
 .acc-inner p{font-size:.97rem}
 .detail-list{list-style:none;margin:14px 0 0;border-top:1px solid var(--line-soft)}

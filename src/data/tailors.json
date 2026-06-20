@@ -1,6 +1,6 @@
 [
   { "name": "Ascot Chang", "country": "Hong Kong", "specialty": "shirts" },
-  { "name": "W.W. Chan & Sons", "country": "Hong Kong", "specialty": "shirts, suits", "instagram": "https://www.instagram.com/wwchantailor/" },
+  { "name": "W.W. Chan & Sons", "country": "Hong Kong", "specialty": "shirts, suits", "instagram": "https://www.instagram.com/wwchantailor/", "gallery": "wwchan" },
   { "name": "Francesco Guida", "country": "Italy", "specialty": "suits" },
   { "name": "Luca Avitabile", "country": "Italy", "specialty": "shirts" },
   { "name": "Sartoria Pirozzi", "country": "Italy", "specialty": "suits" },

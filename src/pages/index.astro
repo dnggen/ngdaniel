@@ -9,8 +9,10 @@ import restaurants from "../data/restaurants.json";
 import travel from "../data/travel.json";
 import crypto from "../data/crypto.json";
 import crawls from "../data/crawls.json";
+import menswear from "../data/menswear.json";
 
 const tailorCountries = [...new Set(tailors.map((t) => t.country))].sort();
+const mwMap = Object.fromEntries(menswear.map((m) => [m.slug, m.files]));
 const byRating = (a, b) => b.rating - a.rating;
 const fineDining = restaurants.filter((r) => r.section === "fine").sort(byRating);
 const cheapEats = restaurants.filter((r) => r.section === "cheap").sort(byRating);
@@ -106,20 +108,48 @@ const cheapEats = restaurants.filter((r) => r.section === "cheap").sort(byRating
                           {tailors
                             .filter((t) => t.country === country)
                             .sort((a, b) => a.name.localeCompare(b.name))
-                            .map((t) => (
-                              <li>
-                                <span>
-                                  {t.instagram ? (
-                                    <a class="inline" href={t.instagram} target="_blank" rel="noopener">
-                                      <b>{t.name}</b>
-                                    </a>
-                                  ) : (
-                                    <b>{t.name}</b>
+                            .map((t) => {
+                              const fits = t.gallery ? mwMap[t.gallery] || [] : [];
+                              return (
+                                <li class="tailor-li">
+                                  <div class="tailor-row">
+                                    <span>
+                                      {t.instagram ? (
+                                        <a class="inline" href={t.instagram} target="_blank" rel="noopener">
+                                          <b>{t.name}</b>
+                                        </a>
+                                      ) : (
+                                        <b>{t.name}</b>
+                                      )}
+                                    </span>
+                                    <span class="meta">{t.specialty}</span>
+                                  </div>
+                                  {fits.length > 0 && (
+                                    <div class="acc-item outfit-acc">
+                                      <button class="acc-head">
+                                        <span class="acc-name">Outfits</span>
+                                        <span class="acc-sign">+</span>
+                                      </button>
+                                      <div class="acc-panel">
+                                        <div class="acc-inner">
+                                          <div class="shots outfit-shots">
+                                            {fits.map((f) => (
+                                              <button
+                                                class="shot"
+                                                data-full={`/photos/menswear/${t.gallery}/${f}`}
+                                                data-cap={t.name}
+                                              >
+                                                <img src={`/photos/menswear/${t.gallery}/thumb/${f}`} alt={t.name} loading="lazy" />
+                                              </button>
+                                            ))}
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
                                   )}
-                                </span>
-                                <span class="meta">{t.specialty}</span>
-                              </li>
-                            ))}
+                                </li>
+                              );
+                            })}
                         </ul>
                       </>
                     ))}
