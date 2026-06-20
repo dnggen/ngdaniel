@@ -1,34 +1,20 @@
 [
   {
-    "slug": "jersey-city",
-    "title": "Jersey City",
+    "slug": "midtown-ii",
+    "title": "Midtown II",
     "date": "June 2026",
-    "order": 1,
+    "order": 5,
     "files": [
-      "02.webp",
-      "01.webp",
-      "04.webp",
-      "06.webp",
-      "05.webp",
-      "03.webp"
+      "01.webp"
     ]
   },
   {
-    "slug": "financial-district",
-    "title": "Financial District",
+    "slug": "midtown",
+    "title": "Midtown",
     "date": "June 2026",
-    "order": 2,
+    "order": 4,
     "files": [
-      "04.webp",
-      "03.webp",
-      "05.webp",
-      "09.webp",
-      "10.webp",
-      "06.webp",
-      "01.webp",
-      "08.webp",
-      "07.webp",
-      "02.webp"
+      "01.webp"
     ]
   },
   {
@@ -45,21 +31,35 @@
     ]
   },
   {
-    "slug": "midtown",
-    "title": "Midtown",
+    "slug": "financial-district",
+    "title": "Financial District",
     "date": "June 2026",
-    "order": 4,
+    "order": 2,
     "files": [
-      "01.webp"
+      "10.webp",
+      "09.webp",
+      "04.webp",
+      "03.webp",
+      "05.webp",
+      "06.webp",
+      "01.webp",
+      "08.webp",
+      "07.webp",
+      "02.webp"
     ]
   },
   {
-    "slug": "midtown-ii",
-    "title": "Midtown II",
+    "slug": "jersey-city",
+    "title": "Jersey City",
     "date": "June 2026",
-    "order": 5,
+    "order": 1,
     "files": [
-      "01.webp"
+      "02.webp",
+      "01.webp",
+      "04.webp",
+      "06.webp",
+      "05.webp",
+      "03.webp"
     ]
   }
 ]

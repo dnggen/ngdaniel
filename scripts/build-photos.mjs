@@ -12,7 +12,7 @@ const albums = [
     sequence: ["02.webp", "01.webp", "04.webp", "06.webp", "05.webp", "03.webp"],
     sources: ["C:/Photos/2026/060826_NYC_Jersey City/Edited"] },
   { slug: "financial-district", title: "Financial District", date: "June 2026", order: 2,
-    sequence: ["04.webp", "03.webp", "05.webp", "09.webp", "10.webp", "06.webp", "01.webp", "08.webp", "07.webp", "02.webp"],
+    sequence: ["10.webp", "09.webp", "04.webp", "03.webp", "05.webp", "06.webp", "01.webp", "08.webp", "07.webp", "02.webp"],
     sources: ["C:/Photos/2026/060926_NYC_Financial District/Edited"] },
   { slug: "flatiron", title: "Flatiron", date: "June 2026", order: 3,
     sequence: ["02.webp", "01.webp", "05.webp", "04.webp", "03.webp"],
@@ -56,7 +56,7 @@ for (const album of albums) {
   console.log(`${album.slug}: ${out.length} photos`);
 }
 
-manifest.sort((a, b) => a.order - b.order);
+manifest.sort((a, b) => b.order - a.order);
 await fs.writeFile(path.join(root, "src", "data", "photos.json"), JSON.stringify(manifest, null, 2));
 console.log("manifest -> src/data/photos.json");
 

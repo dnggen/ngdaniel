@@ -16,6 +16,7 @@ import carphotos from "../data/carphotos.json";
 const tailorCountries = [...new Set(tailors.map((t) => t.country))].sort();
 const mwMap = Object.fromEntries(menswear.map((m) => [m.slug, m.files]));
 const carMap = Object.fromEntries(carphotos.map((c) => [c.slug, c.files]));
+const watchList = [...watches].sort((a, b) => new Date(a.acquired) - new Date(b.acquired));
 const byRating = (a, b) => (b.rating || 0) - (a.rating || 0);
 const fineDining = restaurants.filter((r) => r.section === "fine").sort(byRating);
 const cheapEats = restaurants.filter((r) => r.section === "cheap").sort(byRating);
@@ -144,7 +145,7 @@ const fineCuisines = [...new Set(fineDining.map((r) => r.cuisine))].sort();
 
                   {it.id === "watches" && (
                     <div class="watches">
-                      {watches.map((w) => (
+                      {watchList.map((w) => (
                         <div class="watch">
                           <div class="watch-head">
                             <b>{w.name}</b>
