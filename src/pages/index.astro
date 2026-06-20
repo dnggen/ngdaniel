@@ -1,6 +1,7 @@
 ---
 import Base from "../layouts/Base.astro";
 import site from "../data/site.json";
+import timeline from "../data/timeline.json";
 import interests from "../data/interests.json";
 import cars from "../data/cars.json";
 import watches from "../data/watches.json";
@@ -34,7 +35,14 @@ const fineCuisines = [...new Set(fineDining.map((r) => r.cuisine))].sort();
 
     <section id="timeline">
       <h2 class="sec-title">Timeline</h2>
-      <p>{site.timelineText}</p>
+      {
+        timeline.map((t) => (
+          <div class="tl-entry">
+            <h3 class="tl-head">{t.heading}</h3>
+            <p>{t.text}</p>
+          </div>
+        ))
+      }
     </section>
 
     <section id="interests">

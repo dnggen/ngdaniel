@@ -1,12 +1,7 @@
 [
-  { "era": "First jobs", "text": "Transitioned from accounting into investment banking (M&A)." },
-  { "era": "Full-time crypto", "text": "Changed my life trading .jpegs, arbitraging inefficiencies, and capturing the hottest narratives. Grew a personal account from 5 to 7 figures." },
-  { "era": "Back to school", "text": "Completed an MBA at Columbia Business School. (Thank you, crypto.)" },
-  { "era": "Back to corporate", "text": "Refining skills in the Tech M&A team at Evercore." },
-  {
-    "era": "End goal",
-    "text": "Founder and/or career finance guy.",
-    "itemsLabel": "Potential side careers:",
-    "items": ["Supercar salesman", "Fitness trainer to working professionals", "Sartorial menswear advisor"]
-  }
+  { "heading": "First jobs", "text": "Started in accounting, then made the uncommon move into investment banking (M&A)." },
+  { "heading": "Full-time crypto", "text": "Crypto changed my life — trading .jpegs, arbitraging inefficiencies, and catching the hottest narratives, growing a personal account from 5 to 7 figures." },
+  { "heading": "Back to school", "text": "An MBA at Columbia Business School (thank you, crypto)." },
+  { "heading": "Back to corporate", "text": "Refining skills on the Tech M&A team at Evercore." },
+  { "heading": "End goal", "text": "Founder and/or career finance guy, with a few side careers in mind — supercar salesman, fitness trainer to working professionals, sartorial menswear advisor." }
 ]

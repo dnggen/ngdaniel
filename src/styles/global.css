@@ -52,6 +52,10 @@ body{
 section{padding:48px 0;border-bottom:1px solid var(--line)}
 section:last-of-type{border-bottom:0}
 .sec-title{font-family:var(--serif);font-weight:500;font-size:1.4rem;letter-spacing:-.01em;margin-bottom:26px}
+.tl-entry{margin-bottom:20px}
+.tl-entry:last-child{margin-bottom:0}
+.tl-head{font-family:var(--serif);font-weight:500;font-size:1.08rem;margin-bottom:3px}
+.tl-entry p{margin:0;color:var(--ink-soft)}
 p{margin-bottom:1em;color:var(--ink-soft)}
 p:last-child{margin-bottom:0}
 a.inline{color:var(--ink);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px;text-decoration-color:var(--line);transition:text-decoration-color .25s,color .25s}
