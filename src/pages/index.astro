@@ -36,12 +36,43 @@ const fineCuisines = [...new Set(fineDining.map((r) => r.cuisine))].sort();
     <section id="timeline">
       <h2 class="sec-title">Timeline</h2>
       {
-        timeline.map((t) => (
-          <div class="tl-entry">
-            <h3 class="tl-head">{t.heading}</h3>
-            <p>{t.text}</p>
-          </div>
-        ))
+        timeline.map((t) =>
+          t.dropdown ? (
+            <div class="acc-item tl-acc">
+              <button class="acc-head">
+                <span class="acc-name">{t.heading}</span>
+                <span class="acc-sign">+</span>
+              </button>
+              <div class="acc-panel">
+                <div class="acc-inner">
+                  <p>{t.text}</p>
+                  {t.sub && (
+                    <div class="acc-item tl-sub-acc">
+                      <button class="acc-head">
+                        <span class="acc-name">{t.sub.heading}</span>
+                        <span class="acc-sign">+</span>
+                      </button>
+                      <div class="acc-panel">
+                        <div class="acc-inner">
+                          <ul class="step-list">
+                            {t.sub.items.map((i) => (
+                              <li>{i}</li>
+                            ))}
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  )}
+                </div>
+              </div>
+            </div>
+          ) : (
+            <div class="tl-entry">
+              <h3 class="tl-head">{t.heading}</h3>
+              <p>{t.text}</p>
+            </div>
+          )
+        )
       }
     </section>
 

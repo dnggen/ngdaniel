@@ -56,6 +56,18 @@ section:last-of-type{border-bottom:0}
 .tl-entry:last-child{margin-bottom:0}
 .tl-head{font-family:var(--serif);font-weight:500;font-size:1.08rem;margin-bottom:3px}
 .tl-entry p{margin:0;color:var(--ink-soft)}
+.tl-acc{border-bottom:0;margin-bottom:20px}
+.tl-acc > .acc-head{padding:0}
+.tl-acc > .acc-head .acc-name{font-family:var(--serif);font-weight:500;font-size:1.08rem}
+.tl-acc > .acc-head .acc-sign{font-size:.95rem}
+.tl-acc > .acc-panel .acc-inner{padding:6px 0 0}
+.tl-acc .acc-inner > p{margin:0;color:var(--ink-soft)}
+.tl-sub-acc{border-bottom:0;margin-top:12px}
+.tl-sub-acc .acc-head{padding:0}
+.tl-sub-acc .acc-name{font-family:var(--sans);font-weight:400;font-size:.9rem;letter-spacing:.02em;color:var(--muted)}
+.tl-sub-acc.open .acc-name,.tl-sub-acc .acc-head:hover .acc-name{color:var(--accent)}
+.tl-sub-acc .acc-sign{font-size:.85rem}
+.tl-sub-acc .acc-inner{padding:6px 0 0}
 p{margin-bottom:1em;color:var(--ink-soft)}
 p:last-child{margin-bottom:0}
 a.inline{color:var(--ink);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px;text-decoration-color:var(--line);transition:text-decoration-color .25s,color .25s}
