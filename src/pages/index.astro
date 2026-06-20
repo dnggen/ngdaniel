@@ -10,9 +10,11 @@ import travel from "../data/travel.json";
 import crypto from "../data/crypto.json";
 import crawls from "../data/crawls.json";
 import menswear from "../data/menswear.json";
+import carphotos from "../data/carphotos.json";
 
 const tailorCountries = [...new Set(tailors.map((t) => t.country))].sort();
 const mwMap = Object.fromEntries(menswear.map((m) => [m.slug, m.files]));
+const carMap = Object.fromEntries(carphotos.map((c) => [c.slug, c.files]));
 const byRating = (a, b) => (b.rating || 0) - (a.rating || 0);
 const fineDining = restaurants.filter((r) => r.section === "fine").sort(byRating);
 const cheapEats = restaurants.filter((r) => r.section === "cheap").sort(byRating);
@@ -73,16 +75,23 @@ const fineCuisines = [...new Set(fineDining.map((r) => r.cuisine))].sort();
 
                   {it.id === "cars" && (
                     <div class="garage">
-                      {cars.map((c) => (
-                        <div class="car">
-                          <div class="car-img" style={c.image ? `background-image:url(${c.image})` : ""}>
-                            {!c.image && <span>photo coming</span>}
+                      {cars.map((c) => {
+                        const pics = c.slug ? carMap[c.slug] || [] : [];
+                        return (
+                          <div class="car">
+                            {pics.length > 0 ? (
+                              <button class="shot car-shot" data-full={`/photos/cars/${c.slug}/${pics[0]}`} data-cap={c.name}>
+                                <img src={`/photos/cars/${c.slug}/thumb/${pics[0]}`} alt={c.name} loading="lazy" />
+                              </button>
+                            ) : (
+                              <div class="car-img"><span>photo coming</span></div>
+                            )}
+                            <h4>{c.name}</h4>
+                            <p class="specs">{c.specs}</p>
+                            <span class="yrs">{c.years}</span>
                           </div>
-                          <h4>{c.name}</h4>
-                          <p class="specs">{c.specs}</p>
-                          <span class="yrs">{c.years}</span>
-                        </div>
-                      ))}
+                        );
+                      })}
                     </div>
                   )}
 

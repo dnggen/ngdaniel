@@ -150,6 +150,9 @@ a.inline:hover{color:var(--accent);text-decoration-color:var(--accent)}
 .garage{display:flex;flex-direction:column;gap:26px;margin-top:16px}
 .car-img{position:relative;aspect-ratio:16/10;background:#e3ddcf;border:1px solid var(--line);border-radius:3px;background-size:cover;background-position:center;display:flex;align-items:center;justify-content:center;margin-bottom:11px}
 .car-img span{font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.car-shot{display:block;width:100%;padding:0;border:0;background:none;cursor:pointer;margin-bottom:11px;line-height:0}
+.car-shot img{display:block;width:100%;aspect-ratio:16/10;object-fit:cover;border:1px solid var(--line);border-radius:3px;transition:opacity .25s}
+.car-shot:hover img{opacity:.9}
 .car h4{font-family:var(--serif);font-weight:500;font-size:1.1rem;margin-bottom:4px}
 .car .specs{font-size:.92rem;color:var(--ink-soft);margin:0 0 5px}
 .car .yrs{font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}

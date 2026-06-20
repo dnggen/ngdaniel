@@ -97,3 +97,42 @@ for (const g of menswear) {
 
 await fs.writeFile(path.join(root, "src", "data", "menswear.json"), JSON.stringify(mwManifest, null, 2));
 console.log("menswear manifest -> src/data/menswear.json");
+
+// ---- car galleries (per car) ----
+const carGalleries = [
+  { slug: "porsche-997", sources: ["C:/Photos/Cars/Porsche"] },
+  { slug: "mclaren-570s", sources: ["C:/Photos/Cars/McLaren"] },
+];
+
+const carRoot = path.join(root, "public", "photos", "cars");
+await fs.rm(carRoot, { recursive: true, force: true });
+const carManifest = [];
+
+for (const g of carGalleries) {
+  const outDir = path.join(carRoot, g.slug);
+  const thumbDir = path.join(outDir, "thumb");
+  await fs.mkdir(thumbDir, { recursive: true });
+
+  const files = [];
+  for (const src of g.sources) {
+    let entries = [];
+    try { entries = await fs.readdir(src); } catch { continue; }
+    for (const e of entries) if (/\.(jpe?g|png)$/i.test(e)) files.push(path.join(src, e));
+  }
+  files.sort();
+
+  const out = [];
+  let i = 1;
+  for (const f of files) {
+    const name = String(i).padStart(2, "0") + ".webp";
+    await sharp(f).rotate().resize({ width: 2000, height: 2000, fit: "inside", withoutEnlargement: true }).webp({ quality: 80 }).toFile(path.join(outDir, name));
+    await sharp(f).rotate().resize({ width: 800, height: 800, fit: "inside", withoutEnlargement: true }).webp({ quality: 72 }).toFile(path.join(thumbDir, name));
+    out.push(name);
+    i++;
+  }
+  carManifest.push({ slug: g.slug, files: out });
+  console.log(`cars/${g.slug}: ${out.length} photos`);
+}
+
+await fs.writeFile(path.join(root, "src", "data", "carphotos.json"), JSON.stringify(carManifest, null, 2));
+console.log("car manifest -> src/data/carphotos.json");

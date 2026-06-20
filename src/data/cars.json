@@ -3,12 +3,12 @@
     "name": "Porsche 911 Carrera S (997.2)",
     "specs": "3.8L naturally aspirated flat-six · 385 hp · The last of the truly analogue 911s · Just the right size",
     "years": "2022–2023",
-    "image": ""
+    "slug": "porsche-997"
   },
   {
     "name": "McLaren 570S Coupé",
     "specs": "3.8L twin-turbo V8 · 562 hp · 0–60 in ~3.1s · Dihedral doors · Low production, British-built in Woking · Amazing value",
     "years": "2023–2024",
-    "image": ""
+    "slug": "mclaren-570s"
   }
 ]
