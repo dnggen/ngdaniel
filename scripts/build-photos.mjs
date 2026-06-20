@@ -12,7 +12,7 @@ const albums = [
     sequence: ["02.webp", "01.webp", "03.webp", "04.webp", "05.webp", "06.webp"],
     sources: ["C:/Photos/2026/060826_NYC_Jersey City/Edited"] },
   { slug: "financial-district", title: "Financial District", date: "June 2026", order: 2,
-    sequence: ["10.webp", "09.webp", "01.webp", "02.webp", "06.webp", "07.webp", "08.webp", "03.webp", "05.webp", "04.webp"],
+    sequence: ["10.webp", "09.webp", "01.webp", "02.webp", "06.webp", "08.webp", "07.webp", "03.webp", "05.webp", "04.webp"],
     sources: ["C:/Photos/2026/060926_NYC_Financial District/Edited"] },
   { slug: "flatiron", title: "Flatiron", date: "June 2026", order: 3,
     sequence: ["05.webp", "01.webp", "04.webp", "02.webp", "03.webp"],
