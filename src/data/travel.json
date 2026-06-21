@@ -21,7 +21,7 @@
   { "country": "Luxembourg", "places": "Luxembourg City", "date": "June 2024" },
   { "country": "Macau", "places": "", "date": "January 2024" },
   { "country": "Malaysia", "places": "", "date": "" },
-  { "country": "Malta", "places": "", "date": "December 2022" },
+  { "country": "Malta", "places": "Valletta", "date": "December 2022" },
   { "country": "Mexico", "places": "Mexico City", "date": "March 2025" },
   { "country": "Monaco", "places": "", "date": "June 2024" },
   { "country": "Morocco", "places": "Marrakech, Sahara Desert", "date": "December 2022" },
