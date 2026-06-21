@@ -233,10 +233,6 @@ const fineCuisines = [...new Set(fineDining.map((r) => r.cuisine))].sort();
 
                   {it.id === "food" && (
                     <>
-                      <p style="margin-bottom:6px">
-                        Beli:{" "}
-                        <a class="inline" href="https://beliapp.com" target="_blank" rel="noopener">@dnggen</a>
-                      </p>
                       <div class="sub-head">Michelin</div>
                       {fineCuisines.map((cuisine) => (
                         <>

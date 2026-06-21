@@ -117,8 +117,8 @@ a.inline:hover{color:var(--accent);text-decoration-color:var(--accent)}
 .tailor-row{display:flex;justify-content:space-between;align-items:baseline;gap:18px}
 .outfit-acc{border-bottom:0;margin-top:4px}
 .outfit-acc .acc-head{padding:8px 0}
-.outfit-acc .acc-name{font-family:var(--sans);font-weight:400;font-size:.85rem;letter-spacing:.04em;color:var(--muted)}
-.outfit-acc.open .acc-name,.outfit-acc .acc-head:hover .acc-name{color:var(--accent)}
+.outfit-acc .acc-name{font-family:var(--serif);font-style:italic;font-weight:500;font-size:.95rem;letter-spacing:.01em;color:var(--accent)}
+.outfit-acc.open .acc-name,.outfit-acc .acc-head:hover .acc-name{color:var(--ink)}
 .outfit-acc .acc-sign{font-size:.9rem}
 .outfit-acc .acc-inner{padding:0 0 12px}
 .outfit-shots{columns:2;column-gap:10px}

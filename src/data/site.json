@@ -9,10 +9,8 @@
   "building": "XXX",
   "contactText": "Always open to talking about any of the above. Reach out on…",
   "socials": [
-    { "label": "LinkedIn", "href": "https://www.linkedin.com/in/daniel-ng-/" },
     { "label": "X / Twitter", "href": "https://x.com/dnggen" },
     { "label": "Instagram", "href": "https://www.instagram.com/ng_daniel_/" },
-    { "label": "Beli: @dnggen", "href": "https://beliapp.com" },
     { "label": "Substack", "href": "#" }
   ]
 }

@@ -27,7 +27,6 @@ const { title = site.name, description = site.description } = Astro.props;
   <body>
     <div class="topbar">
       <nav>
-        <a href="/#about">Home</a>
         <a href="/photography">Photography</a>
         <a href="/#contact">Contact</a>
       </nav>
@@ -51,10 +50,10 @@ const { title = site.name, description = site.description } = Astro.props;
     <div class="lb" id="emailPop">
       <button class="lb-close" id="emailClose" aria-label="Close">×</button>
       <div class="email-card">
-        <p class="email-addr">dvnielng@gmail.com</p>
+        <p class="email-addr">dng26@gsb.columbia.edu</p>
         <div class="email-actions">
           <button id="emailCopy" type="button">Copy</button>
-          <a class="inline" href="mailto:dvnielng@gmail.com">Open mail app</a>
+          <a class="inline" href="mailto:dng26@gsb.columbia.edu">Open mail app</a>
         </div>
         <span class="email-copied" id="emailCopied"></span>
       </div>
@@ -93,7 +92,7 @@ const { title = site.name, description = site.description } = Astro.props;
       document.getElementById("emailClose").addEventListener("click", closeEmail);
       emailPop.addEventListener("click", function (e) { if (e.target === emailPop) closeEmail(); });
       document.getElementById("emailCopy").addEventListener("click", function () {
-        navigator.clipboard.writeText("dvnielng@gmail.com").then(function () {
+        navigator.clipboard.writeText("dng26@gsb.columbia.edu").then(function () {
           emailCopied.textContent = "Copied to clipboard";
         });
       });
