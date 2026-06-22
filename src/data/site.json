@@ -11,6 +11,7 @@
   "socials": [
     { "label": "X / Twitter", "href": "https://x.com/dnggen" },
     { "label": "Instagram", "href": "https://www.instagram.com/ng_daniel_/" },
+    { "label": "GitHub", "href": "https://github.com/dnggen" },
     { "label": "Substack", "href": "#" }
   ]
 }
