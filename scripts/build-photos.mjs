@@ -21,6 +21,12 @@ const albums = [
     sources: ["C:/Photos/2026/061626_NYC_Midtown/Edited"] },
   { slug: "midtown-ii", title: "Midtown II", date: "June 2026", order: 5,
     sources: ["C:/Photos/2026/061626_NYC_Midtown/Edited 2"] },
+  { slug: "temple-run", title: "Temple Run", date: "June 2026", order: 6,
+    sequence: ["03.webp", "01.webp", "04.webp", "02.webp"],
+    sources: ["C:/Photos/2026/062126_062926_Seoul/062126_D1_Insadong/Jogyesa Temple"] },
+  { slug: "convenience", title: "Convenience", date: "June 2026", order: 7,
+    sequence: ["01.webp", "02.webp"],
+    sources: ["C:/Photos/2026/062126_062926_Seoul/062126_D1_Insadong/Convenience"] },
 ];
 
 const outRoot = path.join(root, "public", "photos", "albums");
