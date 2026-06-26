@@ -27,6 +27,17 @@ const albums = [
   { slug: "convenience", title: "Convenience", date: "June 2026", order: 7,
     sequence: ["01.webp", "02.webp"],
     sources: ["C:/Photos/2026/062126_062926_Seoul/062126_D1_Insadong/Convenience"] },
+  { slug: "life-in-korea", title: "Life in Korea", date: "June 2026", order: 8,
+    sequence: ["04.webp", "02.webp", "05.webp", "03.webp", "01.webp"],
+    sources: ["C:/Photos/2026/062126_062926_Seoul/062226_D2_Gyeongbokgung/062226_D2_Insa-Dong/062226_D2_Daily Life_Final"] },
+  { slug: "field-crossing", title: "Field Crossing", date: "June 2026", order: 9,
+    sources: ["C:/Photos/2026/062126_062926_Seoul/062226_D2_Gyeongbokgung/062226_D2_Gyeongbokgung Palace/062226_D2_Field Crossing_Final"] },
+  { slug: "need-coffee", title: "Need Coffee", date: "June 2026", order: 10,
+    files: ["C:/Photos/2026/062126_062926_Seoul/062626_D6_Haebangchon/Final/DSC01191.jpg"] },
+  { slug: "hanging-out-to-dry", title: "Hanging Out To Dry", date: "June 2026", order: 11,
+    files: ["C:/Photos/2026/062126_062926_Seoul/062526_D5_Itaewon/Final/DSC01019.jpg"] },
+  { slug: "rising-in-the-east", title: "Rising In The East", date: "June 2026", order: 12,
+    files: ["C:/Photos/2026/062126_062926_Seoul/062526_D5_Itaewon/Final/DSC01002.jpg"] },
 ];
 
 const outRoot = path.join(root, "public", "photos", "albums");
@@ -39,12 +50,16 @@ for (const album of albums) {
   await fs.mkdir(thumbDir, { recursive: true });
 
   const files = [];
-  for (const src of album.sources) {
-    let entries = [];
-    try { entries = await fs.readdir(src); } catch { continue; }
-    for (const e of entries) if (/\.(jpe?g|png)$/i.test(e)) files.push(path.join(src, e));
+  if (album.files) {
+    files.push(...album.files);
+  } else {
+    for (const src of album.sources) {
+      let entries = [];
+      try { entries = await fs.readdir(src); } catch { continue; }
+      for (const e of entries) if (/\.(jpe?g|png)$/i.test(e)) files.push(path.join(src, e));
+    }
+    files.sort();
   }
-  files.sort();
 
   const out = [];
   let i = 1;

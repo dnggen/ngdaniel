@@ -1,5 +1,54 @@
 [
   {
+    "slug": "rising-in-the-east",
+    "title": "Rising In The East",
+    "date": "June 2026",
+    "order": 12,
+    "files": [
+      "01.webp"
+    ]
+  },
+  {
+    "slug": "hanging-out-to-dry",
+    "title": "Hanging Out To Dry",
+    "date": "June 2026",
+    "order": 11,
+    "files": [
+      "01.webp"
+    ]
+  },
+  {
+    "slug": "need-coffee",
+    "title": "Need Coffee",
+    "date": "June 2026",
+    "order": 10,
+    "files": [
+      "01.webp"
+    ]
+  },
+  {
+    "slug": "field-crossing",
+    "title": "Field Crossing",
+    "date": "June 2026",
+    "order": 9,
+    "files": [
+      "01.webp"
+    ]
+  },
+  {
+    "slug": "life-in-korea",
+    "title": "Life in Korea",
+    "date": "June 2026",
+    "order": 8,
+    "files": [
+      "04.webp",
+      "02.webp",
+      "05.webp",
+      "03.webp",
+      "01.webp"
+    ]
+  },
+  {
     "slug": "convenience",
     "title": "Convenience",
     "date": "June 2026",
