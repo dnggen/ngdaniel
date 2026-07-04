@@ -1,5 +1,27 @@
 [
   {
+    "slug": "dollar-and-a-dream",
+    "title": "Dollar and a Dream",
+    "date": "July 2026",
+    "order": 32,
+    "files": [
+      "01.webp"
+    ],
+    "location": "NYC",
+    "caption": "Delivery driver cycles through the Upper West Side on a Friday morning."
+  },
+  {
+    "slug": "barney-greengrass",
+    "title": "Barney Greengrass",
+    "date": "July 2026",
+    "order": 31,
+    "files": [
+      "01.webp"
+    ],
+    "location": "NYC",
+    "caption": "A UPS van drives past Barney Greengrass, a historic Jewish deli on the Upper West Side."
+  },
+  {
     "slug": "plastic-chairs",
     "title": "Plastic Chairs",
     "date": "June 2026",
