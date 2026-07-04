@@ -6,7 +6,8 @@
     "order": 30,
     "files": [
       "01.webp"
-    ]
+    ],
+    "location": "Seoul"
   },
   {
     "slug": "blue-truck",
@@ -15,7 +16,8 @@
     "order": 29,
     "files": [
       "01.webp"
-    ]
+    ],
+    "location": "Seoul"
   },
   {
     "slug": "god-is-good",
@@ -24,7 +26,8 @@
     "order": 28,
     "files": [
       "01.webp"
-    ]
+    ],
+    "location": "Seoul"
   },
   {
     "slug": "record-shop",
@@ -33,7 +36,8 @@
     "order": 27,
     "files": [
       "01.webp"
-    ]
+    ],
+    "location": "Seoul"
   },
   {
     "slug": "back-alley",
@@ -42,7 +46,8 @@
     "order": 26,
     "files": [
       "01.webp"
-    ]
+    ],
+    "location": "Seoul"
   },
   {
     "slug": "green-bus",
@@ -51,7 +56,8 @@
     "order": 25,
     "files": [
       "01.webp"
-    ]
+    ],
+    "location": "Seoul"
   },
   {
     "slug": "seongsu",
@@ -60,7 +66,9 @@
     "order": 24,
     "files": [
       "01.webp"
-    ]
+    ],
+    "location": "Seoul",
+    "caption": "Street scene in Seongsu, Seoul."
   },
   {
     "slug": "mob-of-aunties",
@@ -69,7 +77,9 @@
     "order": 23,
     "files": [
       "01.webp"
-    ]
+    ],
+    "location": "Seoul",
+    "caption": "Mob of aunties in Haebangchon, Seoul."
   },
   {
     "slug": "motorcyclist",
@@ -78,7 +88,9 @@
     "order": 22,
     "files": [
       "01.webp"
-    ]
+    ],
+    "location": "Seoul",
+    "caption": "Motorcyclist on intersection at Haebangchon, Seoul."
   },
   {
     "slug": "colourful-road",
@@ -87,7 +99,9 @@
     "order": 21,
     "files": [
       "01.webp"
-    ]
+    ],
+    "location": "Seoul",
+    "caption": "Colourful road in Haebangchon, Seoul."
   },
   {
     "slug": "namsan-park",
@@ -96,7 +110,9 @@
     "order": 20,
     "files": [
       "01.webp"
-    ]
+    ],
+    "location": "Seoul",
+    "caption": "Namsan Park road to Seoul Tower."
   },
   {
     "slug": "street-corner",
@@ -105,7 +121,9 @@
     "order": 19,
     "files": [
       "01.webp"
-    ]
+    ],
+    "location": "Seoul",
+    "caption": "Biker on street corner in Haebangchon, Seoul."
   },
   {
     "slug": "seoul-style",
@@ -114,7 +132,9 @@
     "order": 18,
     "files": [
       "01.webp"
-    ]
+    ],
+    "location": "Seoul",
+    "caption": "Seoul style. Couple walking in Seoul Forest Park."
   },
   {
     "slug": "drinking-out",
@@ -123,7 +143,9 @@
     "order": 17,
     "files": [
       "01.webp"
-    ]
+    ],
+    "location": "Seoul",
+    "caption": "Drinking on the street in Haebangchon, Seoul."
   },
   {
     "slug": "lighted-pathway",
@@ -132,7 +154,9 @@
     "order": 16,
     "files": [
       "01.webp"
-    ]
+    ],
+    "location": "Seoul",
+    "caption": "Lighted pathway in Itaewon, Seoul."
   },
   {
     "slug": "daily-life-haebangchon",
@@ -141,7 +165,9 @@
     "order": 15,
     "files": [
       "01.webp"
-    ]
+    ],
+    "location": "Seoul",
+    "caption": "Daily life on the street in Haebangchon, Seoul."
   },
   {
     "slug": "rising-in-the-east",
@@ -150,7 +176,8 @@
     "order": 14,
     "files": [
       "01.webp"
-    ]
+    ],
+    "location": "Seoul"
   },
   {
     "slug": "hanging-out-to-dry",
@@ -159,7 +186,8 @@
     "order": 13,
     "files": [
       "01.webp"
-    ]
+    ],
+    "location": "Seoul"
   },
   {
     "slug": "seoul-by-night",
@@ -168,7 +196,8 @@
     "order": 12,
     "files": [
       "01.webp"
-    ]
+    ],
+    "location": "Seoul"
   },
   {
     "slug": "need-coffee",
@@ -177,7 +206,8 @@
     "order": 11,
     "files": [
       "01.webp"
-    ]
+    ],
+    "location": "Seoul"
   },
   {
     "slug": "parting-ways",
@@ -189,7 +219,8 @@
       "01.webp",
       "02.webp",
       "03.webp"
-    ]
+    ],
+    "location": "Seoul"
   },
   {
     "slug": "field-crossing",
@@ -198,7 +229,8 @@
     "order": 9,
     "files": [
       "01.webp"
-    ]
+    ],
+    "location": "Seoul"
   },
   {
     "slug": "life-in-korea",
@@ -211,7 +243,8 @@
       "05.webp",
       "03.webp",
       "01.webp"
-    ]
+    ],
+    "location": "Seoul"
   },
   {
     "slug": "convenience",
@@ -221,7 +254,8 @@
     "files": [
       "01.webp",
       "02.webp"
-    ]
+    ],
+    "location": "Seoul"
   },
   {
     "slug": "temple-run",
@@ -233,7 +267,8 @@
       "01.webp",
       "04.webp",
       "02.webp"
-    ]
+    ],
+    "location": "Seoul"
   },
   {
     "slug": "midtown-ii",
@@ -242,7 +277,8 @@
     "order": 5,
     "files": [
       "01.webp"
-    ]
+    ],
+    "location": "NYC"
   },
   {
     "slug": "midtown",
@@ -251,7 +287,8 @@
     "order": 4,
     "files": [
       "01.webp"
-    ]
+    ],
+    "location": "NYC"
   },
   {
     "slug": "flatiron",
@@ -264,7 +301,8 @@
       "04.webp",
       "02.webp",
       "03.webp"
-    ]
+    ],
+    "location": "NYC"
   },
   {
     "slug": "financial-district",
@@ -282,7 +320,8 @@
       "03.webp",
       "05.webp",
       "04.webp"
-    ]
+    ],
+    "location": "NYC"
   },
   {
     "slug": "jersey-city",
@@ -296,6 +335,7 @@
       "04.webp",
       "05.webp",
       "06.webp"
-    ]
+    ],
+    "location": "NYC"
   }
 ]

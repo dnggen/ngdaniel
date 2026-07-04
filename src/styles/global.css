@@ -144,7 +144,8 @@ a.inline:hover{color:var(--accent);text-decoration-color:var(--accent)}
 .album-block:first-of-type{margin-top:20px}
 .album-title{font-family:var(--serif);font-weight:500;font-size:1.2rem;margin-bottom:2px}
 .album-loc{font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-left:8px}
-.album-date{font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);display:block;margin-bottom:12px}
+.album-date{font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);display:block;margin-bottom:6px}
+.album-caption{font-size:.82rem;color:var(--muted);margin:0 0 12px;line-height:1.5}
 .shots{columns:3;column-gap:10px}
 .shot{display:block;width:100%;break-inside:avoid;margin:0 0 10px;padding:0;border:0;background:none;cursor:pointer;line-height:0}
 .shot img{display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:2px;transition:opacity .25s}
