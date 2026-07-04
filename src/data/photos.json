@@ -1,5 +1,41 @@
 [
   {
+    "slug": "plastic-chairs",
+    "title": "Plastic Chairs",
+    "date": "June 2026",
+    "order": 30,
+    "files": [
+      "01.webp"
+    ]
+  },
+  {
+    "slug": "blue-truck",
+    "title": "Blue Truck",
+    "date": "June 2026",
+    "order": 29,
+    "files": [
+      "01.webp"
+    ]
+  },
+  {
+    "slug": "god-is-good",
+    "title": "God Is Good",
+    "date": "June 2026",
+    "order": 28,
+    "files": [
+      "01.webp"
+    ]
+  },
+  {
+    "slug": "record-shop",
+    "title": "Record Shop",
+    "date": "June 2026",
+    "order": 27,
+    "files": [
+      "01.webp"
+    ]
+  },
+  {
     "slug": "back-alley",
     "title": "Back Alley",
     "date": "June 2026",

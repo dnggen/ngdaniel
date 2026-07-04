@@ -67,6 +67,14 @@ const albums = [
     files: ["C:/Photos/2026/062126_062926_Seoul/062626_D6_Haebangchon/DSC01145.jpg"] },
   { slug: "back-alley", title: "Back Alley", date: "June 2026", order: 26,
     files: ["C:/Photos/2026/062126_062926_Seoul/062626_D6_Haebangchon/DSC01227.jpg"] },
+  { slug: "record-shop", title: "Record Shop", date: "June 2026", order: 27,
+    files: ["C:/Photos/2026/062126_062926_Seoul/062626_D6_Haebangchon/DSC01120.jpg"] },
+  { slug: "god-is-good", title: "God Is Good", date: "June 2026", order: 28,
+    files: ["C:/Photos/2026/062126_062926_Seoul/062626_D6_Haebangchon/DSC01191.jpg"] },
+  { slug: "blue-truck", title: "Blue Truck", date: "June 2026", order: 29,
+    files: ["C:/Photos/2026/062126_062926_Seoul/062626_D6_Haebangchon/DSC01209.jpg"] },
+  { slug: "plastic-chairs", title: "Plastic Chairs", date: "June 2026", order: 30,
+    files: ["C:/Photos/2026/062126_062926_Seoul/062626_D6_Haebangchon/DSC01215.jpg"] },
 ];
 
 const outRoot = path.join(root, "public", "photos", "albums");
