@@ -63,6 +63,10 @@ const albums = [
     files: ["C:/Photos/2026/062126_062926_Seoul/062826_D8_Namsan/DSC01488.jpg"] },
   { slug: "seongsu", title: "Seongsu", date: "June 2026", order: 24,
     files: ["C:/Photos/2026/062126_062926_Seoul/062726_D7_Seongsu/DSC01310.jpg"] },
+  { slug: "green-bus", title: "Green Bus", date: "June 2026", order: 25,
+    files: ["C:/Photos/2026/062126_062926_Seoul/062626_D6_Haebangchon/DSC01145.jpg"] },
+  { slug: "back-alley", title: "Back Alley", date: "June 2026", order: 26,
+    files: ["C:/Photos/2026/062126_062926_Seoul/062626_D6_Haebangchon/DSC01227.jpg"] },
 ];
 
 const outRoot = path.join(root, "public", "photos", "albums");
