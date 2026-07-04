@@ -44,10 +44,21 @@
     "caption": "Mob of aunties in Haebangchon, Seoul."
   },
   {
+    "slug": "namsan-park",
+    "title": "Namsan Park",
+    "date": "June 2026",
+    "order": 28,
+    "files": [
+      "01.webp"
+    ],
+    "location": "Seoul",
+    "caption": "Namsan Park road to Seoul Tower."
+  },
+  {
     "slug": "motorcyclist",
     "title": "Motorcyclist",
     "date": "June 2026",
-    "order": 28,
+    "order": 27,
     "files": [
       "01.webp"
     ],
@@ -58,7 +69,7 @@
     "slug": "colourful-road",
     "title": "Colourful Road",
     "date": "June 2026",
-    "order": 27,
+    "order": 26,
     "files": [
       "01.webp"
     ],
@@ -66,37 +77,26 @@
     "caption": "Colourful road in Haebangchon, Seoul."
   },
   {
-    "slug": "namsan-park",
-    "title": "Namsan Park",
-    "date": "June 2026",
-    "order": 26,
-    "files": [
-      "01.webp"
-    ],
-    "location": "Seoul",
-    "caption": "Namsan Park road to Seoul Tower."
-  },
-  {
-    "slug": "street-corner",
-    "title": "Street Corner",
+    "slug": "seoul-style",
+    "title": "Seoul Style",
     "date": "June 2026",
     "order": 25,
     "files": [
       "01.webp"
     ],
     "location": "Seoul",
-    "caption": "Biker on street corner in Haebangchon, Seoul."
+    "caption": "Seoul style. Couple walking in Seoul Forest Park."
   },
   {
-    "slug": "seoul-style",
-    "title": "Seoul Style",
+    "slug": "street-corner",
+    "title": "Street Corner",
     "date": "June 2026",
     "order": 24,
     "files": [
       "01.webp"
     ],
     "location": "Seoul",
-    "caption": "Seoul style. Couple walking in Seoul Forest Park."
+    "caption": "Biker on street corner in Haebangchon, Seoul."
   },
   {
     "slug": "drinking-out",
@@ -139,7 +139,8 @@
     "files": [
       "01.webp"
     ],
-    "location": "Seoul"
+    "location": "Seoul",
+    "caption": "Waiting for the bus in Haebangchon, Seoul."
   },
   {
     "slug": "back-alley",
@@ -149,47 +150,52 @@
     "files": [
       "01.webp"
     ],
-    "location": "Seoul"
-  },
-  {
-    "slug": "record-shop",
-    "title": "Record Shop",
-    "date": "June 2026",
-    "order": 18,
-    "files": [
-      "01.webp"
-    ],
-    "location": "Seoul"
+    "location": "Seoul",
+    "caption": "Next Door Neighbours"
   },
   {
     "slug": "god-is-good",
     "title": "God Is Good",
     "date": "June 2026",
-    "order": 17,
+    "order": 18,
     "files": [
       "01.webp"
     ],
-    "location": "Seoul"
+    "location": "Seoul",
+    "caption": "Got Lemonade"
   },
   {
     "slug": "blue-truck",
     "title": "Blue Truck",
     "date": "June 2026",
-    "order": 16,
+    "order": 17,
     "files": [
       "01.webp"
     ],
-    "location": "Seoul"
+    "location": "Seoul",
+    "caption": "Blue Steel"
   },
   {
     "slug": "plastic-chairs",
     "title": "Plastic Chairs",
     "date": "June 2026",
+    "order": 16,
+    "files": [
+      "01.webp"
+    ],
+    "location": "Seoul",
+    "caption": "Palette"
+  },
+  {
+    "slug": "record-shop",
+    "title": "Record Shop",
+    "date": "June 2026",
     "order": 15,
     "files": [
       "01.webp"
     ],
-    "location": "Seoul"
+    "location": "Seoul",
+    "caption": "Drill and Decks"
   },
   {
     "slug": "rising-in-the-east",
@@ -199,7 +205,8 @@
     "files": [
       "01.webp"
     ],
-    "location": "Seoul"
+    "location": "Seoul",
+    "caption": "Rising In The East"
   },
   {
     "slug": "hanging-out-to-dry",
@@ -209,7 +216,8 @@
     "files": [
       "01.webp"
     ],
-    "location": "Seoul"
+    "location": "Seoul",
+    "caption": "Hanging Out To Dry"
   },
   {
     "slug": "seoul-by-night",
@@ -219,7 +227,8 @@
     "files": [
       "01.webp"
     ],
-    "location": "Seoul"
+    "location": "Seoul",
+    "caption": "Seoul By Night"
   },
   {
     "slug": "need-coffee",
@@ -229,7 +238,8 @@
     "files": [
       "01.webp"
     ],
-    "location": "Seoul"
+    "location": "Seoul",
+    "caption": "Need Coffee"
   },
   {
     "slug": "parting-ways",
@@ -242,7 +252,8 @@
       "02.webp",
       "03.webp"
     ],
-    "location": "Seoul"
+    "location": "Seoul",
+    "caption": "Parting Ways"
   },
   {
     "slug": "field-crossing",
@@ -252,7 +263,8 @@
     "files": [
       "01.webp"
     ],
-    "location": "Seoul"
+    "location": "Seoul",
+    "caption": "Field Crossing"
   },
   {
     "slug": "life-in-korea",
@@ -266,7 +278,8 @@
       "03.webp",
       "01.webp"
     ],
-    "location": "Seoul"
+    "location": "Seoul",
+    "caption": "Life in Korea"
   },
   {
     "slug": "convenience",
@@ -277,7 +290,8 @@
       "01.webp",
       "02.webp"
     ],
-    "location": "Seoul"
+    "location": "Seoul",
+    "caption": "Convenience"
   },
   {
     "slug": "temple-run",
@@ -290,7 +304,8 @@
       "04.webp",
       "02.webp"
     ],
-    "location": "Seoul"
+    "location": "Seoul",
+    "caption": "Temple Run"
   },
   {
     "slug": "midtown-ii",
@@ -324,7 +339,8 @@
       "02.webp",
       "03.webp"
     ],
-    "location": "NYC"
+    "location": "NYC",
+    "caption": "Flatiron Walk"
   },
   {
     "slug": "financial-district",
