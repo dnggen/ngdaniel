@@ -37,7 +37,7 @@
   { "name": "El Mercado", "city": "Lima", "section": "cheap", "note": "Great local food" },
   { "name": "Carmen", "city": "Cartagena", "section": "cheap", "note": "Great local food" },
   { "name": "Samwoojung", "city": "New York", "section": "cheap", "note": "Amazing Korean bulgogi" },
-  { "name": "Terry Black's BBQ", "city": "Austin", "section": "cheap", "note": "Favourite BBQ spot I've tried" },
+  { "name": "Terry Black's BBQ", "city": "Austin", "section": "cheap", "note": "Favourite BBQ spot I've tried", "photo": "/photos/food/terry-blacks.jpg" },
   { "name": "Shu Jiao Fu Zhou", "city": "New York", "section": "cheap", "note": "Cheap dumplings" },
   { "name": "Ramen Tatsunoya", "city": "Tokyo", "section": "cheap", "note": "Elite tsukemen" },
   { "name": "Grandmother's Recipe", "city": "Seoul", "section": "cheap", "note": "Huge amount of accompanying side dishes. So much intricacy and value", "photo": "/photos/food/grandmothers-recipe.jpg" },
