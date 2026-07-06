@@ -107,8 +107,12 @@ const albums = [
   { slug: "dollar-and-a-dream", title: "Dollar and a Dream", date: "July 2026", order: 32, location: "NYC",
     caption: "Delivery driver cycles through the Upper West Side on a Friday morning.",
     files: ["C:/Photos/2026/070326_Upper West Side/DSC01812.jpg"] },
-  { slug: "penn-station", title: "Penn Station", date: "July 2026", order: 33, location: "NYC",
-    sources: ["C:/Photos/2026/070526_Penn Station"] },
+  { slug: "los-tacos", title: "Los Tacos", date: "July 2026", order: 33, location: "NYC",
+    caption: "Brazilian supporters gather at Los Tacos, a renowned NYC chain restaurant, having lost to Norway in the 2026 World Cup Round of 16.",
+    files: ["C:/Photos/2026/070526_Penn Station/DSC01944.jpg"] },
+  { slug: "horrors-of-capitalism", title: "Horrors of Capitalism", date: "July 2026", order: 34, location: "NYC",
+    caption: "Horrors of Capitalism. Face from billboard is projected in a distorted way onto passing NYC yellow cabs.",
+    files: ["C:/Photos/2026/070526_Penn Station/DSC01961.jpg"] },
 ];
 
 const outRoot = path.join(root, "public", "photos", "albums");

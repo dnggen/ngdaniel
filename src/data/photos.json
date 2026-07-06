@@ -1,14 +1,25 @@
 [
   {
-    "slug": "penn-station",
-    "title": "Penn Station",
+    "slug": "horrors-of-capitalism",
+    "title": "Horrors of Capitalism",
+    "date": "July 2026",
+    "order": 34,
+    "files": [
+      "01.webp"
+    ],
+    "location": "NYC",
+    "caption": "Horrors of Capitalism. Face from billboard is projected in a distorted way onto passing NYC yellow cabs."
+  },
+  {
+    "slug": "los-tacos",
+    "title": "Los Tacos",
     "date": "July 2026",
     "order": 33,
     "files": [
-      "01.webp",
-      "02.webp"
+      "01.webp"
     ],
-    "location": "NYC"
+    "location": "NYC",
+    "caption": "Brazilian supporters gather at Los Tacos, a renowned NYC chain restaurant, having lost to Norway in the 2026 World Cup Round of 16."
   },
   {
     "slug": "dollar-and-a-dream",
