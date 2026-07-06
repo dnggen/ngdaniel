@@ -1,5 +1,16 @@
 [
   {
+    "slug": "penn-station",
+    "title": "Penn Station",
+    "date": "July 2026",
+    "order": 33,
+    "files": [
+      "01.webp",
+      "02.webp"
+    ],
+    "location": "NYC"
+  },
+  {
     "slug": "dollar-and-a-dream",
     "title": "Dollar and a Dream",
     "date": "July 2026",

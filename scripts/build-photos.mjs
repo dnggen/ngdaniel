@@ -103,10 +103,12 @@ const albums = [
     files: ["C:/Photos/2026/062126_062926_Seoul/062726_D7_Seongsu/DSC01310.jpg"] },
   { slug: "barney-greengrass", title: "Barney Greengrass", date: "July 2026", order: 31, location: "NYC",
     caption: "A UPS van drives past Barney Greengrass, a historic Jewish deli on the Upper West Side.",
-    files: ["C:/Photos/2026/070326_Upper West Side/Motion Blur.jpg"] },
+    files: ["C:/Photos/2026/070326_Photo Uno Week 4/Motion Blur.jpg"] },
   { slug: "dollar-and-a-dream", title: "Dollar and a Dream", date: "July 2026", order: 32, location: "NYC",
     caption: "Delivery driver cycles through the Upper West Side on a Friday morning.",
     files: ["C:/Photos/2026/070326_Upper West Side/DSC01812.jpg"] },
+  { slug: "penn-station", title: "Penn Station", date: "July 2026", order: 33, location: "NYC",
+    sources: ["C:/Photos/2026/070526_Penn Station"] },
 ];
 
 const outRoot = path.join(root, "public", "photos", "albums");
