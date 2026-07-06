@@ -112,6 +112,11 @@ a.inline:hover{color:var(--accent);text-decoration-color:var(--accent)}
 .detail-list li.tailor-li,.detail-list li.rest-li{display:block}
 .rest-row{display:flex;justify-content:space-between;align-items:baseline;gap:18px}
 .rest-note{margin:2px 0 0;font-size:.85rem;color:var(--muted);font-style:italic}
+.rest-photo-det{margin-top:4px}
+.rest-photo-toggle{font-size:.75rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);cursor:pointer;list-style:none;display:inline-block}
+.rest-photo-toggle::-webkit-details-marker{display:none}
+.rest-photo-det[open] .rest-photo-toggle{color:var(--ink)}
+.rest-photo-img{display:block;width:100%;max-width:320px;margin-top:8px;border-radius:4px;object-fit:cover}
 .cuisine-head{font-family:var(--serif);font-size:.98rem;color:var(--ink);margin:16px 0 0}
 .cuisine-head + .detail-list{margin-top:6px;border-top:0}
 .tailor-row{display:flex;justify-content:space-between;align-items:baseline;gap:18px}

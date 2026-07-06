@@ -250,6 +250,12 @@ const fineCuisines = [...new Set(fineDining.map((r) => r.cuisine))].sort();
                                     {r.rating ? <span class="meta rating">{r.rating}/5</span> : null}
                                   </div>
                                   {r.note && <p class="rest-note">{r.note}</p>}
+                                  {r.photo && (
+                                    <details class="rest-photo-det">
+                                      <summary class="rest-photo-toggle">photo</summary>
+                                      <img class="rest-photo-img" src={r.photo} alt={r.name} loading="lazy" />
+                                    </details>
+                                  )}
                                 </li>
                               ))}
                           </ul>
@@ -267,6 +273,12 @@ const fineCuisines = [...new Set(fineDining.map((r) => r.cuisine))].sort();
                               {r.rating ? <span class="meta rating">{r.rating}/5</span> : null}
                             </div>
                             {r.note && <p class="rest-note">{r.note}</p>}
+                            {r.photo && (
+                              <details class="rest-photo-det">
+                                <summary class="rest-photo-toggle">photo</summary>
+                                <img class="rest-photo-img" src={r.photo} alt={r.name} loading="lazy" />
+                              </details>
+                            )}
                           </li>
                         ))}
                       </ul>
