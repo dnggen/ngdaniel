@@ -38,5 +38,11 @@
   { "name": "Samwoojung", "city": "New York", "section": "cheap", "note": "Amazing Korean bulgogi" },
   { "name": "Terry Black's BBQ", "city": "Austin", "section": "cheap", "note": "Favourite BBQ spot I've tried" },
   { "name": "Shu Jiao Fu Zhou", "city": "New York", "section": "cheap", "note": "Cheap dumplings" },
-  { "name": "Ramen Tatsunoya", "city": "Tokyo", "section": "cheap", "note": "Elite tsukemen" }
+  { "name": "Ramen Tatsunoya", "city": "Tokyo", "section": "cheap", "note": "Elite tsukemen" },
+  { "name": "Grandmother's Recipe", "city": "Seoul", "section": "cheap" },
+  { "name": "Myeonseoul", "city": "Seoul", "section": "cheap" },
+  { "name": "Mimi Myeonga", "city": "Seoul", "section": "cheap" },
+  { "name": "Oreno Ramen Insa", "city": "Seoul", "section": "cheap" },
+  { "name": "Mijin", "city": "Seoul", "section": "cheap" },
+  { "name": "Hwangsaengga Kalguksu", "city": "Seoul", "section": "cheap" }
 ]
