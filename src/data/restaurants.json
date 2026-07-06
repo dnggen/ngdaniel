@@ -39,10 +39,10 @@
   { "name": "Terry Black's BBQ", "city": "Austin", "section": "cheap", "note": "Favourite BBQ spot I've tried" },
   { "name": "Shu Jiao Fu Zhou", "city": "New York", "section": "cheap", "note": "Cheap dumplings" },
   { "name": "Ramen Tatsunoya", "city": "Tokyo", "section": "cheap", "note": "Elite tsukemen" },
-  { "name": "Grandmother's Recipe", "city": "Seoul", "section": "cheap" },
-  { "name": "Myeonseoul", "city": "Seoul", "section": "cheap" },
-  { "name": "Mimi Myeonga", "city": "Seoul", "section": "cheap" },
-  { "name": "Oreno Ramen Insa", "city": "Seoul", "section": "cheap" },
-  { "name": "Mijin", "city": "Seoul", "section": "cheap" },
-  { "name": "Hwangsaengga Kalguksu", "city": "Seoul", "section": "cheap" }
+  { "name": "Grandmother's Recipe", "city": "Seoul", "section": "cheap", "note": "Huge amount of accompanying side dishes. So much intricacy and value" },
+  { "name": "Myeonseoul", "city": "Seoul", "section": "cheap", "note": "Perilla oil noodles with intense memorable flavour. Great quick eat" },
+  { "name": "Mimi Myeonga", "city": "Seoul", "section": "cheap", "note": "Delicate refined flavour of noodles" },
+  { "name": "Oreno Ramen Insa", "city": "Seoul", "section": "cheap", "note": "Felt like better than anything I'd had in Japan. Extremely umami broth which you can get extra rice/noodles for" },
+  { "name": "Mijin", "city": "Seoul", "section": "cheap", "note": "Portion size amazing and pinnacle of cold noodles" },
+  { "name": "Hwangsaengga Kalguksu", "city": "Seoul", "section": "cheap", "note": "Great hearty and refined homemade style soup" }
 ]
