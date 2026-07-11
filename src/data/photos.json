@@ -1,5 +1,95 @@
 [
   {
+    "slug": "lagoa",
+    "title": "Lagoa",
+    "date": "July 2026",
+    "order": 43,
+    "files": [
+      "01.webp"
+    ],
+    "location": "Rio"
+  },
+  {
+    "slug": "boardwalk",
+    "title": "Boardwalk",
+    "date": "July 2026",
+    "order": 42,
+    "files": [
+      "01.webp"
+    ],
+    "location": "Rio"
+  },
+  {
+    "slug": "beach-day",
+    "title": "Beach Day",
+    "date": "July 2026",
+    "order": 41,
+    "files": [
+      "01.webp"
+    ],
+    "location": "Rio"
+  },
+  {
+    "slug": "painted-rock",
+    "title": "Painted Rock",
+    "date": "July 2026",
+    "order": 40,
+    "files": [
+      "01.webp"
+    ],
+    "location": "Rio"
+  },
+  {
+    "slug": "high-tide",
+    "title": "High Tide",
+    "date": "July 2026",
+    "order": 39,
+    "files": [
+      "01.webp"
+    ],
+    "location": "Rio"
+  },
+  {
+    "slug": "pedra-do-arpoador",
+    "title": "Pedra do Arpoador",
+    "date": "July 2026",
+    "order": 38,
+    "files": [
+      "01.webp"
+    ],
+    "location": "Rio"
+  },
+  {
+    "slug": "arpoador",
+    "title": "Arpoador",
+    "date": "July 2026",
+    "order": 37,
+    "files": [
+      "01.webp"
+    ],
+    "location": "Rio"
+  },
+  {
+    "slug": "ipanema-sunset",
+    "title": "Ipanema Sunset",
+    "date": "July 2026",
+    "order": 36,
+    "files": [
+      "01.webp"
+    ],
+    "location": "Rio"
+  },
+  {
+    "slug": "ipanema-beach",
+    "title": "Ipanema Beach",
+    "date": "July 2026",
+    "order": 35,
+    "files": [
+      "01.webp"
+    ],
+    "location": "Rio"
+  },
+  {
     "slug": "horrors-of-capitalism",
     "title": "Horrors of Capitalism",
     "date": "July 2026",
