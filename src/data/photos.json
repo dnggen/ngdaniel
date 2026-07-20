@@ -1,5 +1,115 @@
 [
   {
+    "slug": "west-side-highway",
+    "title": "West Side Highway",
+    "date": "July 2026",
+    "order": 65,
+    "files": [
+      "01.webp"
+    ],
+    "location": "NYC"
+  },
+  {
+    "slug": "hudson-sunset",
+    "title": "Hudson Sunset",
+    "date": "July 2026",
+    "order": 64,
+    "files": [
+      "01.webp"
+    ],
+    "location": "NYC"
+  },
+  {
+    "slug": "lily-pads",
+    "title": "Lily Pads",
+    "date": "July 2026",
+    "order": 63,
+    "files": [
+      "01.webp"
+    ],
+    "location": "Rio"
+  },
+  {
+    "slug": "gardeners",
+    "title": "Gardeners",
+    "date": "July 2026",
+    "order": 62,
+    "files": [
+      "01.webp"
+    ],
+    "location": "Rio"
+  },
+  {
+    "slug": "garden-arch",
+    "title": "Garden Arch",
+    "date": "July 2026",
+    "order": 61,
+    "files": [
+      "01.webp"
+    ],
+    "location": "Rio"
+  },
+  {
+    "slug": "acai",
+    "title": "Açaí",
+    "date": "July 2026",
+    "order": 60,
+    "files": [
+      "01.webp"
+    ],
+    "location": "Rio"
+  },
+  {
+    "slug": "anderson-teleco",
+    "title": "Anderson Teleco",
+    "date": "July 2026",
+    "order": 59,
+    "files": [
+      "01.webp"
+    ],
+    "location": "Rio"
+  },
+  {
+    "slug": "rainy-day",
+    "title": "Rainy Day",
+    "date": "July 2026",
+    "order": 58,
+    "files": [
+      "01.webp"
+    ],
+    "location": "Rio"
+  },
+  {
+    "slug": "beach-vendor",
+    "title": "Beach Vendor",
+    "date": "July 2026",
+    "order": 57,
+    "files": [
+      "01.webp"
+    ],
+    "location": "Rio"
+  },
+  {
+    "slug": "copacabana-avenue",
+    "title": "Copacabana Avenue",
+    "date": "July 2026",
+    "order": 56,
+    "files": [
+      "01.webp"
+    ],
+    "location": "Rio"
+  },
+  {
+    "slug": "metal-detector",
+    "title": "Metal Detector",
+    "date": "July 2026",
+    "order": 55,
+    "files": [
+      "01.webp"
+    ],
+    "location": "Rio"
+  },
+  {
     "slug": "lagoa",
     "title": "Lagoa",
     "date": "July 2026",
