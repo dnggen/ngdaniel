@@ -1,113 +1,74 @@
 [
   {
-    "slug": "west-side-highway",
-    "title": "West Side Highway",
+    "slug": "little-island",
+    "title": "Little Island",
     "date": "July 2026",
     "order": 65,
     "files": [
       "01.webp"
     ],
-    "location": "NYC"
+    "location": "NYC",
+    "caption": "Long Exposure Little Islands. Sunset on a perfect summer night in NYC overlooking the Little Islands, a striking architectural landmark jutting out onto the Hudson River."
   },
   {
-    "slug": "hudson-sunset",
-    "title": "Hudson Sunset",
+    "slug": "west-side-highway",
+    "title": "West Side Highway",
     "date": "July 2026",
     "order": 64,
     "files": [
       "01.webp"
     ],
-    "location": "NYC"
-  },
-  {
-    "slug": "lily-pads",
-    "title": "Lily Pads",
-    "date": "July 2026",
-    "order": 63,
-    "files": [
-      "01.webp"
-    ],
-    "location": "Rio"
+    "location": "NYC",
+    "caption": "Boating in NYC. Boats along the West Side Highway, a famous walking route along the piers alongside the Hudson River with Jersey in the background."
   },
   {
     "slug": "gardeners",
     "title": "Gardeners",
     "date": "July 2026",
+    "order": 63,
+    "files": [
+      "01.webp"
+    ],
+    "location": "Rio",
+    "caption": "Three trees. Workers at the botanical garden in Rio transporting equipment around the vast expansive plot, one of the standout places of natural beauty to visit."
+  },
+  {
+    "slug": "lily-pads",
+    "title": "Lily Pads",
+    "date": "July 2026",
     "order": 62,
     "files": [
       "01.webp"
     ],
-    "location": "Rio"
+    "location": "Rio",
+    "caption": "Birds of prey. Camouflaged heron waits on the giant lily pad in search of something at the botanical gardens in Rio."
+  },
+  {
+    "slug": "copacabana",
+    "title": "Copacabana",
+    "date": "July 2026",
+    "order": 61,
+    "files": [
+      "01.webp",
+      "02.webp",
+      "03.webp",
+      "04.webp",
+      "05.webp",
+      "06.webp"
+    ],
+    "location": "Rio",
+    "caption": "A morning in Copacabana. The sidewalks bustle with different street vendors without disturbing you, the sounds of the waves crashing against the golden sand and the juxtaposition of the sprawling but manageable city against the mountainous backdrop."
   },
   {
     "slug": "garden-arch",
     "title": "Garden Arch",
     "date": "July 2026",
-    "order": 61,
-    "files": [
-      "01.webp"
-    ],
-    "location": "Rio"
-  },
-  {
-    "slug": "acai",
-    "title": "Açaí",
-    "date": "July 2026",
     "order": 60,
     "files": [
       "01.webp"
     ],
-    "location": "Rio"
-  },
-  {
-    "slug": "anderson-teleco",
-    "title": "Anderson Teleco",
-    "date": "July 2026",
-    "order": 59,
-    "files": [
-      "01.webp"
-    ],
-    "location": "Rio"
-  },
-  {
-    "slug": "rainy-day",
-    "title": "Rainy Day",
-    "date": "July 2026",
-    "order": 58,
-    "files": [
-      "01.webp"
-    ],
-    "location": "Rio"
-  },
-  {
-    "slug": "beach-vendor",
-    "title": "Beach Vendor",
-    "date": "July 2026",
-    "order": 57,
-    "files": [
-      "01.webp"
-    ],
-    "location": "Rio"
-  },
-  {
-    "slug": "copacabana-avenue",
-    "title": "Copacabana Avenue",
-    "date": "July 2026",
-    "order": 56,
-    "files": [
-      "01.webp"
-    ],
-    "location": "Rio"
-  },
-  {
-    "slug": "metal-detector",
-    "title": "Metal Detector",
-    "date": "July 2026",
-    "order": 55,
-    "files": [
-      "01.webp"
-    ],
-    "location": "Rio"
+    "location": "Rio",
+    "caption": "Yellow Rust. Effortlessly curated garden fixtures at the Jardim Botânico Rio De Janeiro, a beautiful area so close to the beach and city."
   },
   {
     "slug": "lagoa",
